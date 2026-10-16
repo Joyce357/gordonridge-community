@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Gordonridge Community Development Initiative | Scarborough</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0F243E",
+            "primary-dark": "#0A1626",
+            "primary-container": "#13335A",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#9bb7de",
+            "secondary": "#1B7A3E",
+            "secondary-dark": "#135c2e",
+            "secondary-container": "#D2F5D7",
+            "secondary-fixed": "#34A853",
+            "on-secondary": "#ffffff",
+            "tertiary": "#F5A623",
+            "tertiary-fixed": "#FBBF24",
+            "tertiary-fixed-dim": "#D97706",
+            "tertiary-container": "#FEF08A",
+            "on-tertiary": "#000000",
+            "surface": "#FDFBF7",
+            "background": "#FDFBF7",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#F0F7F2",
+            "surface-container": "#E8F0EA",
+            "surface-container-high": "#DFEAE2",
+            "surface-container-highest": "#CFDED3",
+            "on-surface": "#0F1E2E",
+            "on-surface-variant": "#4A5568",
+            "warm-cream": "#FBF7EE",
+            "warm-yellow-surface": "#FFFDF0",
+            "mint-subtle": "#EDF7F0"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background font-sans text-on-surface antialiased selection:bg-secondary-fixed selection:text-white">
+<!-- TOP BRAND BANNER & UTILITY BAR -->
+<header class="fixed top-0 w-full z-50 shadow-md">
+<!-- Top info ribbon with brand tri-color accent line -->
+<div class="w-full bg-[#0A1626] text-white text-xs font-semibold border-b border-[#1B7A3E]/30">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-9 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-[#F5A623] animate-pulse"></span>
+<span class="tracking-wider uppercase text-[#FEF08A] font-bold text-[11px] sm:text-xs">Strong People · Strong Families · Stronger Community</span>
+</div>
+<div class="hidden md:flex items-center gap-6 text-slate-300 text-xs">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-xs text-[#34A853]">location_on</span>Gordonridge Place, Scarborough ON</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-xs text-[#FBBF24]">schedule</span>Mon - Fri: 9:00 AM – 6:00 PM</span>
+<a class="hover:text-white transition-colors flex items-center gap-1 text-[#D2F5D7]" href="#"><span class="material-symbols-outlined text-xs">accessibility_new</span>Accessibility</a>
+</div>
+</div>
+</div>
+<!-- Main Navigation Bar -->
+<div class="bg-white/95 backdrop-blur-md border-b-2 border-[#1B7A3E]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-4">
+<!-- Logo Branding -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-[#1B7A3E] shadow-sm shrink-0 bg-white p-0.5 group-hover:scale-105 transition-transform">
+<img alt="Gordonridge Community Development Initiative Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuNDFDcfwPszWv5B3IbCYxJ6MCx0YUxezoakcfr-j1KPJStORjTqP1O93em_JZNm0k1-tnP2KlV-0Sp8Xbn2-CiLCuryV8jzTFwSIaBXT4xynhOr39tVh_O8pl8nOqDE6dGzHX5KAeYu-92k2BrWWotb133CEmA_dEYpOdWDc-y04K2ppFPm6n8vrzYcxmIe__ca5Ow-jGdP8PTwQ5dm98OtYA8i9pp1Mn2COd8uX8Kdtrad1lqWJebxpD23-oiKbk-Q"/>
+</div>
+<div class="flex flex-col">
+<span class="font-extrabold text-xl text-[#0F243E] tracking-tight leading-none group-hover:text-[#1B7A3E] transition-colors">GORDONRIDGE</span>
+<span class="text-[11px] font-bold text-[#1B7A3E] tracking-widest uppercase mt-0.5">Community Development Initiative</span>
+</div>
+</a>
+<!-- Desktop Links -->
+<nav class="hidden xl:flex items-center gap-1 font-semibold text-[13px]">
+<a class="px-3.5 py-2 rounded-lg text-[#1B7A3E] bg-[#EDF7F0] font-bold" href="#">Home</a>
+<a class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors" href="#about">About Us</a>
+<a class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors" href="#priorities">Priorities</a>
+<a class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors" href="#programs">Programs</a>
+<a class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors" href="#generations">All Generations</a>
+<a class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors" href="#events">Events</a>
+<a class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors" href="#stories">Stories &amp; News</a>
+<a class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors" href="#contact">Contact</a>
+</nav>
+<!-- CTA Buttons -->
+<div class="flex items-center gap-2.5">
+<a class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#FEF08A] hover:bg-[#FDE047] text-[#0F243E] font-bold text-xs tracking-wide shadow-sm transition-all border border-[#F5A623]" href="#support">
+<span class="material-symbols-outlined text-[16px] text-[#D97706]">volunteer_activism</span>
+<span>Support Us</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-[#1B7A3E] hover:bg-[#135c2e] text-white font-bold text-xs tracking-wide shadow-md hover:shadow-lg transition-all" href="#get-involved">
+<span>Get Involved</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full pt-28">
+<!-- 1. CINEMATIC DEEP NAVY HERO SECTION -->
+<section class="relative w-full bg-[#0A1626] text-white overflow-hidden">
+<!-- Full background imagery with rich dark gradient overlay -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105" data-alt="A lively community park in Scarborough Toronto with multigenerational residents, smiling teenagers with basketballs and elderly neighbors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxpTovwmoagwMB2bdk-Y9k7gnnGNhzJUCNLOoMPi96AFeigr80jgjTlNNtgn-zwaSeBB_rKpScRGPS-Q5Ly40WD3ndQSQq61uATFd6yXvaWfug2GEC9S1-w9kljDzc88Ed4GAyxoDRFltlzgMfOqlM757UjBcWoq2HccyVgSaygp_ETkP2gMcuwPWbXzF13RhfdOLh1CwiMnWQZRfkjWle4370Onm6-IiPTfxyaEmc21HFDsbj4tZo"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#0A1626] via-[#0F243E]/95 to-[#0F243E]/70"></div>
+<!-- Ambient decorative color blooms from logo -->
+<div class="absolute -top-32 right-10 w-96 h-96 rounded-full bg-[#1B7A3E]/30 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 right-1/4 w-80 h-80 rounded-full bg-[#F5A623]/20 blur-3xl pointer-events-none"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 sm:py-24 lg:py-28">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+<!-- Left Column Content -->
+<div class="lg:col-span-7 space-y-6">
+<!-- Brand Badge Pill -->
+<div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-[#F5A623]/40 shadow-inner">
+<span class="w-2.5 h-2.5 rounded-full bg-[#34A853] animate-ping"></span>
+<span class="text-xs font-extrabold text-[#FEF08A] tracking-wider uppercase">STRONG PEOPLE · STRONG FAMILIES · STRONGER COMMUNITY</span>
+</div>
+<!-- Headline -->
+<h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
+              Building an Empowered, Connected &amp; Thriving <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#34A853] via-[#48c76b] to-[#FBBF24]">Gordonridge</span>
+</h1>
+<p class="text-base sm:text-lg text-slate-200 max-w-2xl leading-relaxed">
+              Scarborough's resident-led grassroots engine. Fostering multigenerational belonging through youth mentorship, sports development, family food equity, senior vitality, and neighborhood wellness.
+            </p>
+<!-- CTA Row -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 px-7 py-4 rounded-xl bg-[#1B7A3E] hover:bg-[#228838] text-white font-bold text-sm tracking-wide shadow-lg shadow-[#1B7A3E]/40 hover:-translate-y-0.5 transition-all" href="#programs">
+<span>Explore Free Programs</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-7 py-4 rounded-xl bg-gradient-to-r from-[#F5A623] to-[#FBBF24] hover:from-[#d97706] hover:to-[#F5A623] text-[#0A1626] font-extrabold text-sm tracking-wide shadow-lg transition-all hover:-translate-y-0.5" href="#get-involved">
+<span class="material-symbols-outlined text-lg">handshake</span>
+<span>Get Involved</span>
+</a>
+</div>
+<!-- Trust Pills -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-6 border-t border-white/15">
+<div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+<div class="w-10 h-10 rounded-lg bg-[#1B7A3E]/40 flex items-center justify-center text-[#34A853]">
+<span class="material-symbols-outlined text-xl">how_to_reg</span>
+</div>
+<div>
+<div class="font-bold text-xs text-white">100% Resident-Led</div>
+<div class="text-[11px] text-slate-300">By &amp; for Scarborough</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+<div class="w-10 h-10 rounded-lg bg-[#F5A623]/30 flex items-center justify-center text-[#FBBF24]">
+<span class="material-symbols-outlined text-xl">diversity_1</span>
+</div>
+<div>
+<div class="font-bold text-xs text-white">Multigenerational</div>
+<div class="text-[11px] text-slate-300">Ages 4 to elders 80+</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+<div class="w-10 h-10 rounded-lg bg-[#34A853]/30 flex items-center justify-center text-[#D2F5D7]">
+<span class="material-symbols-outlined text-xl">local_activity</span>
+</div>
+<div>
+<div class="font-bold text-xs text-white">Zero Barrier Access</div>
+<div class="text-[11px] text-slate-300">Free open enrollment</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column Visual Card -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden p-2 bg-gradient-to-tr from-[#1B7A3E] via-[#F5A623] to-[#34A853] shadow-2xl">
+<div class="relative rounded-[22px] overflow-hidden aspect-[4/5] bg-[#0A1626]">
+<img class="w-full h-full object-cover" data-alt="Scarborough community park with smiling teenagers, youth coach and seniors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxpTovwmoagwMB2bdk-Y9k7gnnGNhzJUCNLOoMPi96AFeigr80jgjTlNNtgn-zwaSeBB_rKpScRGPS-Q5Ly40WD3ndQSQq61uATFd6yXvaWfug2GEC9S1-w9kljDzc88Ed4GAyxoDRFltlzgMfOqlM757UjBcWoq2HccyVgSaygp_ETkP2gMcuwPWbXzF13RhfdOLh1CwiMnWQZRfkjWle4370Onm6-IiPTfxyaEmc21HFDsbj4tZo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A1626] via-transparent to-transparent"></div>
+<!-- Floating bottom card -->
+<div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-xl text-[#0F243E] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-[#1B7A3E] flex items-center justify-center text-white shrink-0">
+<span class="material-symbols-outlined text-xl">park</span>
+</div>
+<div>
+<div class="font-bold text-xs text-[#0F243E]">Gordonridge Place Hub</div>
+<div class="text-[11px] text-slate-500">Rooted in Scarborough for 30+ Years</div>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-[#D2F5D7] text-[#1B7A3E] font-extrabold text-[10px] uppercase tracking-wider">Active Hub</span>
+</div>
+</div>
+</div>
+<!-- Overlapping decorative gold badge -->
+<div class="absolute -top-5 -left-5 bg-[#F5A623] text-[#0A1626] font-bold px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-2 border-2 border-white -rotate-3">
+<span class="material-symbols-outlined text-xl">solar_power</span>
+<div class="text-left leading-tight">
+<div class="text-xs uppercase font-extrabold">Grassroots Power</div>
+<div class="text-[10px] text-slate-900 font-semibold">Scarborough, Ontario</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. WARM CREAM INTRODUCTION SECTION WITH ORGANIC RIBBON ACCENT -->
+<section class="relative w-full py-20 lg:py-24 bg-[#FDFBF7]" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Image Column with Navy Overlap Badge -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full h-[460px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-[#0F243E]">
+<img class="w-full h-full object-cover" data-alt="Neighbors collaborating in a warm community room workshop in Scarborough" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5sop2x39vMa42I04svg3IC39OHsuOb93V6WLgo9BuW7H11z-DwSrF_xoTuPKZM9RFjHqoqg_DL2dk34hawX_cw1HErmdMQNAYh6Kl7f6f4gw18wDWtTdSpjZ5Hffwe918Q51m8HOUms2RnQhMyJawr3tf1jEXkj6TIP0954JrZpZ7ZdXX9BF8VVHlEaoa29DSZYNYEGzG_mBeMahrAHUTfsqtz-FBzxgiv-GJP21PB9z59DtNUkiq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A1626]/80 via-transparent to-transparent"></div>
+</div>
+<!-- Navy & Gold Floating Quote Card -->
+<div class="absolute -bottom-8 -right-4 max-w-xs p-6 rounded-2xl bg-[#0F243E] text-white shadow-2xl border-l-4 border-[#34A853]">
+<span class="material-symbols-outlined text-[#F5A623] text-3xl">format_quote</span>
+<p class="text-xs sm:text-sm font-semibold leading-relaxed mt-1 text-slate-100">
+                "Unity, inclusion, and opportunity for every neighbor, child, and senior on the ridge."
+              </p>
+<p class="text-[11px] text-[#34A853] font-bold uppercase tracking-wider mt-3">— Gordonridge Resident Council</p>
+</div>
+</div>
+<!-- Narrative Column -->
+<div class="lg:col-span-7 space-y-6 pt-6 lg:pt-0">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDF7F0] border border-[#1B7A3E]/30">
+<span class="w-2 h-2 rounded-full bg-[#1B7A3E]"></span>
+<span class="text-xs font-extrabold text-[#1B7A3E] uppercase tracking-wider">Building Gordonridge Together</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F243E] tracking-tight leading-tight">
+              Rooted in Our Streets. Dedicated to Our Families.
+            </h2>
+<p class="text-base text-slate-700 leading-relaxed">
+              The Gordonridge Community Development Initiative was established with a singular, resolute conviction: that sustainable neighborhood renewal is greatest when led by the very residents who call this community home. From vibrant children's programs and youth mentorship spaces to senior wellness circles and food equity distribution, our grassroots collective unites neighbors across cultural backgrounds to shape an environment where all generations flourish.
+            </p>
+<!-- 3 Core Pillars with Brand Green & Gold accents -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+<div class="p-5 rounded-2xl bg-white border border-[#1B7A3E]/20 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-xl bg-[#D2F5D7] text-[#1B7A3E] flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-2xl">handshake</span>
+</div>
+<h3 class="font-bold text-sm text-[#0F243E] mb-1">Grassroots Unity</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Neighborhood decisions steered by resident councils and intergenerational voices.</p>
+</div>
+<div class="p-5 rounded-2xl bg-white border border-[#F5A623]/30 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-xl bg-[#FEF08A] text-[#B45309] flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-2xl">shield_moon</span>
+</div>
+<h3 class="font-bold text-sm text-[#0F243E] mb-1">Safe Spaces</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Proactive care, illuminated recreation parks, and youth peer de-escalation.</p>
+</div>
+<div class="p-5 rounded-2xl bg-white border border-[#0F243E]/20 shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-xl bg-[#DCE8F7] text-[#0F243E] flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-2xl">trending_up</span>
+</div>
+<h3 class="font-bold text-sm text-[#0F243E] mb-1">Lifelong Growth</h3>
+<p class="text-xs text-slate-600 leading-relaxed">From early literacy to vocational bridges and senior digital navigation programs.</p>
+</div>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 font-bold text-sm text-[#1B7A3E] hover:text-[#135c2e] transition-colors" href="#priorities">
+<span>Discover our core community priorities</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. CORE PRIORITIES (PALE MINT / SAGE BACKGROUND WITH 4x2 RICH TILES) -->
+<section class="w-full py-20 bg-[#F0F7F2] border-y border-[#1B7A3E]/10" id="priorities">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 space-y-12">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-2xl space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1B7A3E]/10 border border-[#1B7A3E]/30 text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+<span>What We Champion</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F243E] tracking-tight">Our Core Community Priorities</h2>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Eight essential pillars guiding our community work, programming grants, and daily volunteer actions across Scarborough.
+            </p>
+</div>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-[#0F243E] font-bold text-xs border border-slate-200 shadow-sm hover:border-[#1B7A3E] hover:text-[#1B7A3E] transition-all" href="#programs">
+<span>Explore All Initiatives</span>
+<span class="material-symbols-outlined text-sm">arrow_outward</span>
+</a>
+</div>
+<!-- 4x2 Interactive Priorities Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="group p-6 rounded-2xl bg-white border border-[#1B7A3E]/15 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#D2F5D7] text-[#1B7A3E] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">diversity_3</span>
+</div>
+<span class="text-[11px] font-extrabold text-[#1B7A3E] uppercase tracking-wider block mb-1">Inclusion</span>
+<h3 class="text-lg font-bold text-[#0F243E] group-hover:text-[#1B7A3E] transition-colors mb-2">Community Unity &amp; Belonging</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Welcoming multicultural potlucks, neighborhood open forums, and inclusive public spaces.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[#1B7A3E] font-bold text-xs mt-6 group-hover:gap-2.5 transition-all" href="#programs">
+<span>Explore Priority</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="group p-6 rounded-2xl bg-white border border-[#F5A623]/25 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#FEF08A] text-[#B45309] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">sports_basketball</span>
+</div>
+<span class="text-[11px] font-extrabold text-[#D97706] uppercase tracking-wider block mb-1">Next Generation</span>
+<h3 class="text-lg font-bold text-[#0F243E] group-hover:text-[#D97706] transition-colors mb-2">Youth Leadership &amp; Mentorship</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Athletic training, homework clubs, digital creative lab, and career pathways coaching.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[#D97706] font-bold text-xs mt-6 group-hover:gap-2.5 transition-all" href="#programs">
+<span>Explore Priority</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="group p-6 rounded-2xl bg-white border border-[#0F243E]/15 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#DCE8F7] text-[#0F243E] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">family_restroom</span>
+</div>
+<span class="text-[11px] font-extrabold text-[#0F243E] uppercase tracking-wider block mb-1">Family</span>
+<h3 class="text-lg font-bold text-[#0F243E] group-hover:text-[#13335A] transition-colors mb-2">Family Support Networks</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Parenting peer circles, newcomer family settlement navigation, and childcare respite links.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[#0F243E] font-bold text-xs mt-6 group-hover:gap-2.5 transition-all" href="#programs">
+<span>Explore Priority</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Card 4 -->
+<div class="group p-6 rounded-2xl bg-white border border-[#1B7A3E]/15 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#D2F5D7] text-[#1B7A3E] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">nutrition</span>
+</div>
+<span class="text-[11px] font-extrabold text-[#1B7A3E] uppercase tracking-wider block mb-1">Wellness</span>
+<h3 class="text-lg font-bold text-[#0F243E] group-hover:text-[#1B7A3E] transition-colors mb-2">Health &amp; Nutrition Equity</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Community gardens, fresh produce box distributions, mental health peer circles, and fitness clinics.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[#1B7A3E] font-bold text-xs mt-6 group-hover:gap-2.5 transition-all" href="#programs">
+<span>Explore Priority</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Card 5 -->
+<div class="group p-6 rounded-2xl bg-white border border-[#0F243E]/15 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#DCE8F7] text-[#0F243E] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">local_police</span>
+</div>
+<span class="text-[11px] font-extrabold text-[#0F243E] uppercase tracking-wider block mb-1">Safety</span>
+<h3 class="text-lg font-bold text-[#0F243E] group-hover:text-[#13335A] transition-colors mb-2">Neighborhood Care &amp; Safety</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Resident-led safety audits, neighborhood walkabouts, clean-up drives, and restorative peace initiatives.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[#0F243E] font-bold text-xs mt-6 group-hover:gap-2.5 transition-all" href="#programs">
+<span>Explore Priority</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Card 6 -->
+<div class="group p-6 rounded-2xl bg-white border border-[#F5A623]/25 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#FEF08A] text-[#B45309] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">work_outline</span>
+</div>
+<span class="text-[11px] font-extrabold text-[#D97706] uppercase tracking-wider block mb-1">Economics</span>
+<h3 class="text-lg font-bold text-[#0F243E] group-hover:text-[#D97706] transition-colors mb-2">Skills &amp; Economic Growth</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Resume clinics, interview preparation, small business vendor pop-ups, and workforce partnerships.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[#D97706] font-bold text-xs mt-6 group-hover:gap-2.5 transition-all" href="#programs">
+<span>Explore Priority</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Card 7 -->
+<div class="group p-6 rounded-2xl bg-white border border-[#1B7A3E]/15 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#D2F5D7] text-[#1B7A3E] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">elderly</span>
+</div>
+<span class="text-[11px] font-extrabold text-[#1B7A3E] uppercase tracking-wider block mb-1">Elders</span>
+<h3 class="text-lg font-bold text-[#0F243E] group-hover:text-[#1B7A3E] transition-colors mb-2">Seniors Active Care</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Gentle morning yoga, digital tablet training, cultural afternoon teas, and weekly check-ins.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[#1B7A3E] font-bold text-xs mt-6 group-hover:gap-2.5 transition-all" href="#programs">
+<span>Explore Priority</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Card 8 -->
+<div class="group p-6 rounded-2xl bg-white border border-[#F5A623]/25 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#FEF08A] text-[#B45309] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">celebration</span>
+</div>
+<span class="text-[11px] font-extrabold text-[#D97706] uppercase tracking-wider block mb-1">Culture</span>
+<h3 class="text-lg font-bold text-[#0F243E] group-hover:text-[#D97706] transition-colors mb-2">Cultural Celebrations</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Annual block festivals, Black History Month galas, multicultural music showcases, and food fairs.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[#D97706] font-bold text-xs mt-6 group-hover:gap-2.5 transition-all" href="#events">
+<span>Explore Priority</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. FEATURED PROGRAMS (EDITORIAL HERO CARD + SECONDARY GRID) -->
+<section class="w-full py-20 bg-white" id="programs">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 space-y-10">
+<!-- Section Top -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1B7A3E]/10 border border-[#1B7A3E]/30 text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+<span>Neighborhood Action</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F243E] tracking-tight">Featured Community Programs</h2>
+<p class="text-slate-600 text-sm sm:text-base max-w-xl">
+              Free, accessible initiatives designed directly with and for residents of Gordonridge.
+            </p>
+</div>
+<!-- Quick Filters -->
+<div class="flex flex-wrap items-center gap-1.5 bg-[#F0F7F2] p-1.5 rounded-2xl border border-[#1B7A3E]/15">
+<button class="px-4 py-2 rounded-xl bg-[#0F243E] text-white text-xs font-bold shadow-sm">All Programs</button>
+<button class="px-4 py-2 rounded-xl text-slate-700 hover:text-[#1B7A3E] text-xs font-bold transition-colors">Youth &amp; Sports</button>
+<button class="px-4 py-2 rounded-xl text-slate-700 hover:text-[#1B7A3E] text-xs font-bold transition-colors">Food &amp; Kitchen</button>
+<button class="px-4 py-2 rounded-xl text-slate-700 hover:text-[#1B7A3E] text-xs font-bold transition-colors">Seniors 55+</button>
+</div>
+</div>
+<!-- Large Featured Editorial Horizontal Card -->
+<div class="rounded-3xl bg-gradient-to-r from-[#0F243E] to-[#13335A] text-white overflow-hidden shadow-2xl border border-white/10">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+<!-- Visual -->
+<div class="lg:col-span-5 relative h-72 sm:h-96 lg:h-full">
+<img class="w-full h-full object-cover" data-alt="High-energy teenage youth basketball scrimmage and skills training clinic on outdoor community court in Scarborough" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA1xV7jQ1tJYs9SbBrMYNE71CGiDJePl2Vidm-5RgmsCyJFDaswUWtiU7F1vDDdWudbehBP48QBGfEyBpnZaLqnagIUJxUwLZ-VkURTIgezKYVEnCsVtSN8Pjd1yrtmGKHpZJI5Ous0g97gCAVAqYDRnTklutyHN5HfY70_5qjdhuTTgcF9HKd5Z-x1N7igWz-oc0h0r9k2xVh1XdgwMln69xGltioslWBfgawAMjMV_piiEOwpvDG"/>
+<div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#0F243E] via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-[#F5A623] text-[#0A1626] font-extrabold text-xs uppercase tracking-wide shadow-md">
+                ★ Flagship Youth Academy
+              </div>
+</div>
+<!-- Info -->
+<div class="lg:col-span-7 p-6 sm:p-10 space-y-4">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-[#1B7A3E] text-white font-bold text-xs uppercase tracking-wider">Ages 12 – 18</span>
+<span class="px-3 py-1 rounded-full bg-white/10 text-[#FEF08A] font-semibold text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-[#F5A623]">schedule</span>
+                  Tuesdays &amp; Thursdays · 4:30 PM - 7:00 PM
+                </span>
+</div>
+<h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                Gordonridge Youth Tech &amp; Sports Academy
+              </h3>
+<p class="text-slate-200 text-sm sm:text-base leading-relaxed">
+                Combines high-energy competitive basketball clinics and conditioning with an after-game digital tech lab focusing on web development, music production, graphic design, and mentor coaching.
+              </p>
+<div class="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-white/15">
+<div class="flex items-center gap-2 text-[#34A853] text-xs font-bold">
+<span class="material-symbols-outlined text-base">verified</span>
+<span>100% Free · Equipment Provided · Snacks Included</span>
+</div>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#1B7A3E] hover:bg-[#228838] text-white font-bold text-xs tracking-wide shadow-lg transition-all" href="#get-involved">
+<span>Register Free</span>
+<span class="material-symbols-outlined text-base">how_to_reg</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- 2 Secondary Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Food Share -->
+<div class="rounded-3xl bg-[#FDFBF7] border border-[#1B7A3E]/20 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="relative h-60 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Warm community kitchen workshop with diverse multicultural families preparing fresh vegetables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiwkovqAcEguwe_0BCmyTkyO84nONvr73-eyW3-dAjyfFtHZSifoLb6sLnkIFJML2S5G75Lkcl0sm-NsOvglt4eFoU_hKrAiblJfdo_RFrf8UwZmUwxYavOqToJjeZzpwcsENIwJpSvfXbU8V_UUs6apZPIF-JAgzrJXs6tpKNnQjq0rpyOIXvv3Wp7iepI3tZZHPPk6loDt_GFvUXBItOzSqZzlSpQbA4JY-EKI_tf1VqHye-qH7n"/>
+<div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#FEF08A] text-[#0F243E] font-bold text-xs">Weekly Drop-in</div>
+<div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#0F243E] text-white font-bold text-xs">All Families</div>
+</div>
+<div class="p-6 sm:p-8 space-y-4 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-slate-500 text-xs font-medium mb-2">
+<span class="material-symbols-outlined text-sm text-[#F5A623]">calendar_today</span>
+<span>Wednesdays &amp; Saturdays · 10:00 AM – 1:00 PM</span>
+</div>
+<h3 class="text-xl font-bold text-[#0F243E] mb-2">Healthy Families Food Share &amp; Kitchen</h3>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Fresh produce distribution sourced through Ontario growers, paired with cooking classes, budget nutrition workshops, and culturally affirming recipe exchanges.
+                </p>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-slate-200">
+<span class="text-xs font-bold text-[#1B7A3E]">Free grocery hampers provided</span>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#EDF7F0] hover:bg-[#1B7A3E] hover:text-white text-[#1B7A3E] font-bold text-xs transition-colors" href="#programs">
+<span>Details</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Seniors Club -->
+<div class="rounded-3xl bg-[#FDFBF7] border border-[#1B7A3E]/20 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="relative h-60 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Active Canadian seniors stretching and smiling during gentle chair yoga in community center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKXUm8GCZMvz41a5bxq4u6Jv8LAai8UKxYCa9Wb2CFgv3RKhEvDxNEKhblQr6OiuahZHAPNJw5nsCZadcH5ZW4j4hfzMjPNr5ZlCuBNjgmQ7_UKBulfwiXNp-RjcPlQ5K4wl7upSMiGs0ZDXHaftJ5MKpZmnqbeM3EhS45XUsH4_lVDJR3__FZDN5sxY0etRJfnS3aIn1QBa1soWmskUZbOjaYUMFotDY2i5fc8YZAGjy_VPbErEi5"/>
+<div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#D2F5D7] text-[#1B7A3E] font-bold text-xs">Ongoing Sessions</div>
+<div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#0F243E] text-white font-bold text-xs">Seniors 55+</div>
+</div>
+<div class="p-6 sm:p-8 space-y-4 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-slate-500 text-xs font-medium mb-2">
+<span class="material-symbols-outlined text-sm text-[#34A853]">calendar_today</span>
+<span>Mondays &amp; Fridays · 10:30 AM – 12:30 PM</span>
+</div>
+<h3 class="text-xl font-bold text-[#0F243E] mb-2">Golden Age Active Living Club</h3>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  A cherished sanctuary for seniors featuring low-impact mobility exercises, tablet &amp; smartphone literacy classes, cultural tea mornings, and routine wellness checks.
+                </p>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-slate-200">
+<span class="text-xs font-bold text-[#1B7A3E]">Transit &amp; pickup assistance</span>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#EDF7F0] hover:bg-[#1B7A3E] hover:text-white text-[#1B7A3E] font-bold text-xs transition-colors" href="#programs">
+<span>Details</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. FULL-BLEED DEEP NAVY IMPACT SECTION (#0C1B2E) WITH GLOWING ACCENTS -->
+<section class="relative w-full py-20 lg:py-24 bg-[#0C1B2E] text-white overflow-hidden">
+<!-- Glow blooms from logo colors -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#1B7A3E]/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-[#F5A623]/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 text-center space-y-12">
+<div class="max-w-2xl mx-auto space-y-3">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-[#34A853]/40 text-[#FEF08A] text-xs font-extrabold uppercase tracking-widest">
+<span class="w-2 h-2 rounded-full bg-[#34A853]"></span>
+<span>Growing Stronger Together</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Our Grassroots Footprint in Scarborough</h2>
+<p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Real measurable results led by committed neighbors, resident ambassadors, and grassroots partners.
+          </p>
+</div>
+<!-- 4 Metric Cards with Glowing Green & Gold Highlights -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md hover:border-[#34A853] hover:bg-white/10 transition-all flex flex-col items-center justify-center space-y-2 group">
+<span class="text-5xl font-extrabold text-white tracking-tight group-hover:text-[#34A853] transition-colors">1,200+</span>
+<span class="text-base font-bold text-[#FEF08A]">Residents Reached</span>
+<span class="text-xs text-slate-300">Across residential towers &amp; townhomes</span>
+</div>
+<div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md hover:border-[#F5A623] hover:bg-white/10 transition-all flex flex-col items-center justify-center space-y-2 group">
+<span class="text-5xl font-extrabold text-[#FBBF24] tracking-tight">24+</span>
+<span class="text-base font-bold text-white">Active Programs</span>
+<span class="text-xs text-slate-300">Year-round weekly enrichment</span>
+</div>
+<div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md hover:border-[#34A853] hover:bg-white/10 transition-all flex flex-col items-center justify-center space-y-2 group">
+<span class="text-5xl font-extrabold text-[#34A853] tracking-tight">35+</span>
+<span class="text-base font-bold text-white">Civic Partners</span>
+<span class="text-xs text-slate-300">Local health units, schools &amp; agencies</span>
+</div>
+<div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md hover:border-[#F5A623] hover:bg-white/10 transition-all flex flex-col items-center justify-center space-y-2 group">
+<span class="text-5xl font-extrabold text-white tracking-tight group-hover:text-[#FBBF24] transition-colors">150+</span>
+<span class="text-base font-bold text-[#D2F5D7]">Resident Volunteers</span>
+<span class="text-xs text-slate-300">Driving coaching, logistics &amp; care</span>
+</div>
+</div>
+<!-- Subtle Motto Bar -->
+<div class="pt-4 flex items-center justify-center gap-3 text-xs tracking-wider uppercase font-extrabold text-slate-400">
+<span class="text-[#34A853]">Strong People</span>
+<span class="text-[#F5A623]">|</span>
+<span class="text-[#FEF08A]">Strong Families</span>
+<span class="text-[#F5A623]">|</span>
+<span class="text-[#34A853]">Stronger Community</span>
+</div>
+</div>
+</section>
+<!-- 6. ALL GENERATIONS SECTION (STAGGERED EDITORIAL CARDS) -->
+<section class="w-full py-20 bg-[#FDFBF7]" id="generations">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 space-y-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-3 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1B7A3E]/10 border border-[#1B7A3E]/30 text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+<span>Multigenerational Care</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F243E] tracking-tight">A Community for Every Generation</h2>
+<p class="text-slate-600 text-sm sm:text-base">
+              Directly inspired by our crest: fostering nurturing pathways from early childhood play through honored golden years.
+            </p>
+</div>
+</div>
+<!-- 4 Distinct Generational Photo Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Generation 1: Children -->
+<div class="group rounded-3xl bg-white border border-[#1B7A3E]/20 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Diverse young children participating in creative arts and reading in Scarborough" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1_2-KtEbPAvZvkcu2kLj_7ISejdhzfyrzy3iIE8EBKDOtO6fK3foVVPSkwSQErUBuWnHRI0P4a9WiRQfsz2MRM6H7gFtQLYuMFDFS2d-IzQ6J0OfqDeimRp91z0pVkI5WLOAdFVPDjBICtOFKysdhyr-2K7RiohG1kH58DpKq0CoQHtkVgvtF2aBu6n-IWn08TVI27xzd2F4Riri_K1XrJvk_fymaNv6MHCpHCuwJFF7A2qzhQAgM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A1626]/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3">
+<span class="px-3 py-1 rounded-full bg-[#1B7A3E] text-white font-extrabold text-xs shadow-md">Leaf Green · Ages 4-11</span>
+</div>
+</div>
+<div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-bold text-[#0F243E] mb-1">Children</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Early literacy, Saturday creative crafts, active playground games, and after-school homework tutoring.</p>
+</div>
+<a class="text-xs font-bold text-[#1B7A3E] flex items-center gap-1 hover:gap-2 transition-all" href="#programs">
+<span>View Children's Hub</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Generation 2: Youth & Teens -->
+<div class="group rounded-3xl bg-white border border-[#0F243E]/20 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Motivated teenagers collaborating over laptops in Toronto youth studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlCMx6Orld-Dl5GfYLi_9bi3dMRwCIUUhZ-m97FeDQBFA6AaKSLu_VBD6BAY2-te8tQ-kFrDx0N9yo9CASRLCHomNvznzGR1M_QkT8C9Kkr8cHPodnnkN5vtb_DMFPDn69gs_R_WW2qkXpPbi44XA626quZIg4kxWWbEf-OYlgwef-6TtsXzMnDxs2-nSPru_MASqRbBpjrziw9oAEa4U3lR2SNDHQ5rvZo_HVOyctcAFEfTuMd7EK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A1626]/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3">
+<span class="px-3 py-1 rounded-full bg-[#0F243E] text-white font-extrabold text-xs shadow-md">Navy / Cyan · Ages 12-24</span>
+</div>
+</div>
+<div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-bold text-[#0F243E] mb-1">Youth &amp; Teens</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Athletic mentorship, resume clinics, DJ and music arts lab, and post-secondary scholarship guidance.</p>
+</div>
+<a class="text-xs font-bold text-[#0F243E] flex items-center gap-1 hover:gap-2 transition-all" href="#programs">
+<span>Explore Youth Programs</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Generation 3: Families & Adults -->
+<div class="group rounded-3xl bg-white border border-[#F5A623]/30 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Multicultural parents gathered for community workshop in Scarborough" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCICIHNT4mEz7bhOCsnXfOBFazuwB5kETP447CaWeC4iRJVuD_2pa6c83N653vlmrgkoVh4_FKlLq16a1WlL4GpM7Z_gOObPOOPZda4gnThvstlZBrMBw7ac3T1Qlr1dqvF3iPVNvtDGs3S71be8sijUYfkF4asE554ZiJMZq3xhwQFE_s6WxPDYVwMtxgjgbGCe-m4opZPcyZpRGNkoyaq5sGu2d-2vIuaoQUYIyB6nEj4MIpd2Dq4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A1626]/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3">
+<span class="px-3 py-1 rounded-full bg-[#F5A623] text-[#0A1626] font-extrabold text-xs shadow-md">Sunrise Gold · All Adults</span>
+</div>
+</div>
+<div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-bold text-[#0F243E] mb-1">Families &amp; Adults</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Parenting peer networks, settlement paperwork help, housing navigation, and wellness workshops.</p>
+</div>
+<a class="text-xs font-bold text-[#D97706] flex items-center gap-1 hover:gap-2 transition-all" href="#programs">
+<span>Family Resources</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Generation 4: Valued Elders -->
+<div class="group rounded-3xl bg-white border border-[#34A853]/30 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Senior Black grandmother laughing warmly with friends at community tea social" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqRGCwKjJctWdEY7XZmMn6-5ROIMUawqAegl1VA1GIq9l2EfH_Ybo0ldWvFRe51P71Ix470BYHWpD03Y0EQgV7Rl9YIjecofPeSsSNBapgF59xJ4h_Ud6xqemjbRY1L1wvnrTvPJTDg618Lq6Y56VpvgapvLdsJbYIEiCqAFcAJTpAm2PDdgdTKOfwyUaOaSYmVYByz9Hq3JWEjA1Mz_cH6YZz_U0mEjTFDyRlTnaL2PhNpOkFk2HZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A1626]/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3">
+<span class="px-3 py-1 rounded-full bg-[#34A853] text-white font-extrabold text-xs shadow-md">Emerald · Seniors 55+</span>
+</div>
+</div>
+<div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-bold text-[#0F243E] mb-1">Valued Elders</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Cultural storytelling circles, digital literacy on tablets, gentle mobility fitness, and friendly visits.</p>
+</div>
+<a class="text-xs font-bold text-[#1B7A3E] flex items-center gap-1 hover:gap-2 transition-all" href="#programs">
+<span>Seniors Club</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. COMMUNITY SAFETY & WELLBEING (WARM SURFACE #FFFDF0 / #FEF3C7) -->
+<section class="w-full py-20 bg-[#FFFDF0] border-y border-[#F5A623]/20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Info Column -->
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FEF08A] border border-[#F5A623]/40 text-[#0F243E] text-xs font-extrabold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-[#1B7A3E]"></span>
+<span>Peace &amp; Care</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F243E] tracking-tight leading-tight">
+              Cultivating Neighborhood Safety Through Connection
+            </h2>
+<p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              True neighborhood safety begins when neighbors recognize, greet, and check on one another. Rather than punitive policing, Gordonridge models restorative community care—investing in illuminated parks, youth mentors, and neighborhood walkabouts.
+            </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#1B7A3E]/20 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-[#D2F5D7] text-[#1B7A3E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">night_sight_auto</span>
+</div>
+<div>
+<h3 class="font-bold text-sm text-[#0F243E]">Resident-Led Evening Walks</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Volunteer neighbors walking school paths and public corridors during dusk to ensure high visibility and peace.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#F5A623]/30 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-[#FEF08A] text-[#B45309] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">psychology</span>
+</div>
+<div>
+<h3 class="font-bold text-sm text-[#0F243E]">Mental Health First Response Circles</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Culturally grounded emotional wellness workshops and confidential peer navigation for youth and parents.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-[#0F243E]/20 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-[#DCE8F7] text-[#0F243E] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">park</span>
+</div>
+<div>
+<h3 class="font-bold text-sm text-[#0F243E]">Park &amp; Courtyard Beautification</h3>
+<p class="text-xs text-slate-600 leading-relaxed">Active upkeep of courtyard greens, floral planters, and community bulletin boards that inspire mutual pride.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Image Column -->
+<div class="lg:col-span-6 relative">
+<div class="w-full h-[480px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-[#0F243E]">
+<img class="w-full h-full object-cover" data-alt="Community safety volunteers and young leaders in matching safety jackets having coordination huddle in community park" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5g_RYbig4g-UAIgEcMxA6d5N6BlyjW5Z4MFNoFdF07JtidueEz95KaUilBKTEvIrxEioFOc0qM0gOQIz5o_BEEufIpKrmEP6WpHayqf_3gh3FuCy50ESOa_4GaVHz-8PJx1OFLunDxF3yZKDL7CIDXUztIIuRN1qfTpk1bycx9JvSKczVvHE6ASOujYfZAlpUAuhxiOD-G7oB9w0dzCv07NPYG_6D9VGDPJ3xv_AXqsTtha9QKky4"/>
+</div>
+<!-- Overlapping Hotline Card -->
+<div class="absolute -bottom-6 left-6 right-6 p-6 rounded-2xl bg-white shadow-2xl border-l-4 border-[#1B7A3E] flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#1B7A3E] text-3xl">verified_user</span>
+<div>
+<div class="font-bold text-sm text-[#0F243E]">Resident Council Community Line</div>
+<div class="text-xs text-slate-500">Suggestions, hall bookings &amp; neighborhood care</div>
+</div>
+</div>
+<a class="px-5 py-2.5 rounded-xl bg-[#0F243E] hover:bg-[#1B7A3E] text-white font-bold text-xs transition-colors shrink-0" href="#contact">
+                Contact Desk
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. UPCOMING COMMUNITY EVENTS (GOLDEN DATE BLOCKS) -->
+<section class="w-full py-20 bg-[#FDFBF7]" id="events">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 space-y-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-3 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1B7A3E]/10 border border-[#1B7A3E]/30 text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+<span>Calendar &amp; Gatherings</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F243E] tracking-tight">Upcoming Community Gatherings</h2>
+<p class="text-slate-600 text-sm sm:text-base">
+              Connect in person. Every event is free and open to Gordonridge families and Scarborough neighbors.
+            </p>
+</div>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-[#0F243E] font-bold text-xs border border-slate-200 shadow-sm hover:border-[#1B7A3E] hover:text-[#1B7A3E] transition-all" href="#events">
+<span>Full Event Calendar</span>
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+</a>
+</div>
+<!-- 3 Rich Event Cards with High-Contrast Golden-Yellow Date Blocks -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Event 1 -->
+<div class="p-6 rounded-3xl bg-white border border-[#1B7A3E]/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between space-y-6">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="flex flex-col items-center justify-center w-16 h-16 rounded-2xl bg-[#FEF08A] text-[#0A1626] border border-[#F5A623] shadow-sm">
+<span class="text-[11px] font-extrabold uppercase">MAY</span>
+<span class="text-2xl font-black leading-none text-[#B45309]">17</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-[#EDF7F0] text-[#1B7A3E] font-extrabold text-xs">Community Park</span>
+</div>
+<div>
+<span class="text-[#1B7A3E] text-[11px] font-extrabold uppercase tracking-wider">Annual Gathering</span>
+<h3 class="text-lg font-bold text-[#0F243E] mt-1">Gordonridge Spring Festival &amp; BBQ</h3>
+<p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                  Live multicultural music, kid's bouncy castles, free halal BBQ, seed giveaways, and community partner tables.
+                </p>
+</div>
+<div class="space-y-1.5 pt-2 border-t border-slate-100 text-xs text-slate-500">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[#1B7A3E]">schedule</span>
+<span>12:00 PM – 5:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[#1B7A3E]">location_on</span>
+<span>Gordonridge Central Greenspace</span>
+</div>
+</div>
+</div>
+<a class="w-full py-3 rounded-xl bg-[#1B7A3E] hover:bg-[#135c2e] text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors" href="#events">
+<span>Register / RSVP Free</span>
+<span class="material-symbols-outlined text-sm">how_to_reg</span>
+</a>
+</div>
+<!-- Event 2 -->
+<div class="p-6 rounded-3xl bg-white border border-[#F5A623]/25 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between space-y-6">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="flex flex-col items-center justify-center w-16 h-16 rounded-2xl bg-[#FEF08A] text-[#0A1626] border border-[#F5A623] shadow-sm">
+<span class="text-[11px] font-extrabold uppercase">JUN</span>
+<span class="text-2xl font-black leading-none text-[#B45309]">07</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-[#FEF08A] text-[#0A1626] font-extrabold text-xs">Hardcourts</span>
+</div>
+<div>
+<span class="text-[#D97706] text-[11px] font-extrabold uppercase tracking-wider">Youth Tournament</span>
+<h3 class="text-lg font-bold text-[#0F243E] mt-1">Scarborough Youth Basketball Classic</h3>
+<p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                  3v3 neighborhood bracket tournament with guest referee mentors, trophy awards, and nutrition masterclasses.
+                </p>
+</div>
+<div class="space-y-1.5 pt-2 border-t border-slate-100 text-xs text-slate-500">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[#F5A623]">schedule</span>
+<span>10:00 AM – 4:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[#F5A623]">location_on</span>
+<span>Outdoor Gordonridge Hardcourts</span>
+</div>
+</div>
+</div>
+<a class="w-full py-3 rounded-xl bg-[#0F243E] hover:bg-[#1B7A3E] text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors" href="#events">
+<span>Register Team</span>
+<span class="material-symbols-outlined text-sm">sports_handball</span>
+</a>
+</div>
+<!-- Event 3 -->
+<div class="p-6 rounded-3xl bg-white border border-[#1B7A3E]/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between space-y-6">
+<div class="space-y-4">
+<div class="flex items-start justify-between">
+<div class="flex flex-col items-center justify-center w-16 h-16 rounded-2xl bg-[#FEF08A] text-[#0A1626] border border-[#F5A623] shadow-sm">
+<span class="text-[11px] font-extrabold uppercase">JUN</span>
+<span class="text-2xl font-black leading-none text-[#B45309]">21</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-[#EDF7F0] text-[#1B7A3E] font-extrabold text-xs">Community Hall</span>
+</div>
+<div>
+<span class="text-[#1B7A3E] text-[11px] font-extrabold uppercase tracking-wider">Senior Health</span>
+<h3 class="text-lg font-bold text-[#0F243E] mt-1">Seniors Health &amp; Wellness Screening Day</h3>
+<p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                  Free blood sugar, vision, and hearing tests conducted by visiting Scarborough nurses, with nutritious warm lunch.
+                </p>
+</div>
+<div class="space-y-1.5 pt-2 border-t border-slate-100 text-xs text-slate-500">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[#1B7A3E]">schedule</span>
+<span>11:00 AM – 3:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[#1B7A3E]">location_on</span>
+<span>Gordonridge CDI Community Room</span>
+</div>
+</div>
+</div>
+<a class="w-full py-3 rounded-xl bg-[#EDF7F0] hover:bg-[#1B7A3E] text-[#1B7A3E] hover:text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors" href="#events">
+<span>Book Clinic Slot</span>
+<span class="material-symbols-outlined text-sm">medical_services</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. FULL-WIDTH CALL TO ACTION PHOTOGRAPHIC BAND -->
+<section class="relative w-full py-24 bg-[#0A1626] text-white overflow-hidden" id="get-involved">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105" data-alt="Scarborough community banner background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxpTovwmoagwMB2bdk-Y9k7gnnGNhzJUCNLOoMPi96AFeigr80jgjTlNNtgn-zwaSeBB_rKpScRGPS-Q5Ly40WD3ndQSQq61uATFd6yXvaWfug2GEC9S1-w9kljDzc88Ed4GAyxoDRFltlzgMfOqlM757UjBcWoq2HccyVgSaygp_ETkP2gMcuwPWbXzF13RhfdOLh1CwiMnWQZRfkjWle4370Onm6-IiPTfxyaEmc21HFDsbj4tZo"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#0A1626] via-[#1B7A3E]/90 to-[#0F243E]"></div>
+</div>
+<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 text-center space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#FBBF24]/50 text-[#FEF08A] font-extrabold text-xs uppercase tracking-widest">
+          Join Hands With Neighbors
+        </div>
+<h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
+          THERE'S A PLACE FOR YOU IN GORDONRIDGE.
+        </h2>
+<p class="text-base sm:text-lg text-slate-100 max-w-2xl mx-auto leading-relaxed">
+          Whether you want to volunteer an hour a week, enroll your child in basketball and coding, or sponsor fresh family produce baskets—every resident strengthens our community.
+        </p>
+<div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+<a class="px-8 py-4 rounded-xl bg-gradient-to-r from-[#F5A623] to-[#FBBF24] hover:from-[#d97706] hover:to-[#F5A623] text-[#0A1626] font-extrabold text-sm tracking-wide shadow-2xl transition-all hover:-translate-y-0.5 flex items-center gap-2" href="#volunteer">
+<span class="material-symbols-outlined text-lg">volunteer_activism</span>
+<span>Volunteer With Us</span>
+</a>
+<a class="px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-[#0F243E] font-extrabold text-sm tracking-wide shadow-xl transition-all hover:-translate-y-0.5 flex items-center gap-2" href="#support">
+<span class="material-symbols-outlined text-lg text-[#1B7A3E]">payments</span>
+<span>Donate to Programs</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 10. RESIDENT STORIES & TESTIMONIALS (WARM OFF-WHITE EDITORIAL) -->
+<section class="w-full py-20 bg-[#FDFBF7]" id="stories">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 space-y-12">
+<div class="max-w-2xl space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1B7A3E]/10 border border-[#1B7A3E]/30 text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+<span>Resident Voices</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F243E] tracking-tight">Voices From Our Community</h2>
+<p class="text-slate-600 text-sm sm:text-base">
+            Hear directly from the neighbors whose lives and families are shaped by Gordonridge CDI programs.
+          </p>
+</div>
+<!-- 2 Editorial Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Story 1 -->
+<div class="p-8 rounded-3xl bg-white border border-[#1B7A3E]/20 shadow-md flex flex-col justify-between space-y-6">
+<div class="space-y-4">
+<!-- Golden Stars -->
+<div class="flex items-center gap-1 text-[#F5A623]">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-sm sm:text-base text-[#0F243E] font-medium leading-relaxed italic">
+                "When we moved to Gordonridge five years ago, we were looking for community. Through the weekly food share and youth basketball, my two sons found mentors who truly care about their academic future. Gordonridge gave our family deep roots and lasting friendship."
+              </p>
+</div>
+<div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-slate-100 ring-2 ring-[#1B7A3E] shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Amina, smiling warmly in Scarborough Toronto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkjWpWHGFuHLODWjf1-mRxpGmtDMIZ_36u1dS9jWkr_tPg7lNa3CzhqFuNusy6imfzsi4z7KVkJy7fIc8LwhP64b58zXR-Zu-H62X9M_sJA_olOjhApwJDeEvMtHRKuwaXNlB-xxb0ntUvbqhcWHb5ztkUC1PbjfFAnZVIu0DpYICfMpspJJjZY9vr1lGUd-C47lHaA68a_mWkcmF97hLFDpV6AwMu1oTEIJ6CQ0_ylKYB5EX5O81Y"/>
+</div>
+<div>
+<p class="font-bold text-sm text-[#0F243E]">Amina K.</p>
+<p class="text-xs text-[#1B7A3E] font-semibold">Gordonridge Resident &amp; Parent Volunteer</p>
+</div>
+</div>
+</div>
+<!-- Story 2 -->
+<div class="p-8 rounded-3xl bg-white border border-[#F5A623]/30 shadow-md flex flex-col justify-between space-y-6">
+<div class="space-y-4">
+<!-- Golden Stars -->
+<div class="flex items-center gap-1 text-[#F5A623]">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-sm sm:text-base text-[#0F243E] font-medium leading-relaxed italic">
+                "After retiring, days can feel isolating. The Golden Age Active Club gave me a vibrant reason to wake up early every Monday and Friday. We stretch, laugh, learn digital tablets, and watch our grandchildren play in safe courtyards. This initiative is our neighborhood heart."
+              </p>
+</div>
+<div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-slate-100 ring-2 ring-[#F5A623] shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Marcus, senior resident in Scarborough" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByhzgOIfri7eiBjrXzSISgFOcHJtFQM-L61lc6oe_4O3wf2a3gja66XxasB7FTJQxPfDGfe79VOOrDs_HkzSw9PIqBD-gLlTiEZ7-tWOwOornjEzKxfW35dchjxud2e-Hys2MrH48jQEGYoVWNlyPXIUit1ucHg4bMQovjicaZlvTLFGD3AKvKXZ2Kf4H5RuvNRUwKgVoHEcIoBvEVfgKFvE7_-hZMJTd2gdt43xGytmU0ltW4MF6_"/>
+</div>
+<div>
+<p class="font-bold text-sm text-[#0F243E]">Marcus T.</p>
+<p class="text-xs text-[#D97706] font-semibold">Long-time Resident &amp; Seniors Club Advocate</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. NEWS & UPDATES (3 RICH CARDS) -->
+<section class="w-full py-20 bg-[#F0F7F2] border-t border-[#1B7A3E]/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 space-y-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-3 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1B7A3E]/10 border border-[#1B7A3E]/30 text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+<span>Latest News</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F243E] tracking-tight">Stories &amp; Announcements</h2>
+<p class="text-slate-600 text-sm sm:text-base">
+              Stay informed on neighborhood achievements, council updates, and upcoming program registrations.
+            </p>
+</div>
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-[#0F243E] font-bold text-xs border border-slate-200 shadow-sm hover:border-[#1B7A3E] hover:text-[#1B7A3E] transition-all" href="#">
+<span>All News Articles</span>
+<span class="material-symbols-outlined text-sm">newspaper</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Article 1 -->
+<div class="rounded-3xl bg-white border border-[#1B7A3E]/15 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Community garden ribbon cutting in Scarborough with neighbors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCew_UhETKp9p_tkfaNOduwjj6Oh3noIkbXN4AvnHYDRLLEDXvstTlroqIzXYHCZmmPvfHeTaG8dLmlyiwl3zfBjh7PlN38nVd14qCOeGh4Gav7NyqsZ-ZDPr1fkEjNg8KIx9J0EB-J-9It-ASl4UB5gitWxe_zYckh7tVp96648IwkuFy0ggGAXgSsQONO5jWCqZ7b25u9CFwOWxQhfvpqDAzQ-LH1hRWwG9n0q0z3WXX-esgjk4FG"/>
+</div>
+<div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-slate-500 text-[11px] font-bold mb-2">
+<span class="text-[#1B7A3E]">COMMUNITY FOOD</span>
+<span>·</span>
+<span>April 24, 2025</span>
+</div>
+<h3 class="font-bold text-base text-[#0F243E] hover:text-[#1B7A3E] transition-colors leading-snug">
+                  New Raised Bed Community Garden Launches at Gordonridge Park
+                </h3>
+<p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                  Twenty-four new raised garden plots are now assigned to local families eager to cultivate organic vegetables and cultural herbs.
+                </p>
+</div>
+<a class="text-xs font-bold text-[#1B7A3E] flex items-center gap-1 hover:gap-2 transition-all" href="#">
+<span>Read Full Story</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="rounded-3xl bg-white border border-[#F5A623]/25 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Scarborough students with tech certificates" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR0AMcRdko3_Fd9vW9VG2PjDUcCiF5aadcVytg_RgTaWIV84KiThJIs481frVU2YBNIzk_hI2_L3B1BJp41kABpWloBd96k5trZh5fOIijyo4ppHnlBvXwPHVEz4iFswjm8G8WZuNbjWWjO5nrqwhLvpmPoi4HQGjlqfnjALaul9SAvA8Rn5lZzZ6KCYS1eW0zH4DQiyeXcIK4j_gk_14Kig5GqTb3BV2wCxWmH8BjXmkjhmN92Apn"/>
+</div>
+<div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-slate-500 text-[11px] font-bold mb-2">
+<span class="text-[#D97706]">YOUTH ACHIEVEMENT</span>
+<span>·</span>
+<span>April 18, 2025</span>
+</div>
+<h3 class="font-bold text-base text-[#0F243E] hover:text-[#D97706] transition-colors leading-snug">
+                  Gordonridge Youth Tech Cohort Graduates 28 Scarborough Scholars
+                </h3>
+<p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                  Ten weeks of web programming and graphic media concluded with stellar student demo presentations attended by civic technology partners.
+                </p>
+</div>
+<a class="text-xs font-bold text-[#D97706] flex items-center gap-1 hover:gap-2 transition-all" href="#">
+<span>Read Full Story</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Article 3 -->
+<div class="rounded-3xl bg-white border border-[#0F243E]/15 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Scarborough resident council meeting in session" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCx-WNFrkMBPGNgFvLObvMa6j4Yh6YmiGfdywOQedinu8kUK2npj3RnbDRV75qZ28KFtEa-yrhWrMC23HO_W_T5gCItrZF3tGWUll8IV7_PoaqBS0gRghoETZCjhZBaSaSy9Ij75w4IFXlAFZMXxo0M7fZm2Km3H9l_UDs3_HDtztIq_H-pQmbdagRhcE3R38Q1Kk9fwIUZnXdM2b3F3PHZCn78k1jAnhe5-SC2riWlJhGaNVBzoxg"/>
+</div>
+<div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-slate-500 text-[11px] font-bold mb-2">
+<span class="text-[#0F243E]">CIVIC UPDATE</span>
+<span>·</span>
+<span>April 05, 2025</span>
+</div>
+<h3 class="font-bold text-base text-[#0F243E] hover:text-[#1B7A3E] transition-colors leading-snug">
+                  Resident Council Town Hall Announces Summer Recreation Schedule
+                </h3>
+<p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                  Review the newly approved schedules for court lighting, family barbecue dates, and seniors morning mobility circles.
+                </p>
+</div>
+<a class="text-xs font-bold text-[#0F243E] flex items-center gap-1 hover:gap-2 transition-all" href="#">
+<span>Read Full Story</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 12. STAY CONNECTED INTERACTIVE BANNER -->
+<section class="w-full py-16 bg-[#FDFBF7]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+<div class="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-r from-[#0F243E] via-[#13335A] to-[#1B7A3E] text-white p-8 sm:p-14 shadow-2xl border-2 border-white/20">
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7 space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#FEF08A] text-xs font-extrabold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-[#34A853]"></span>
+<span>Stay In The Loop</span>
+</div>
+<h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+                Never Miss a Gathering, Grant, or Youth Workshop
+              </h2>
+<p class="text-slate-200 text-sm max-w-xl">
+                Subscribe to our resident newsletter for monthly schedules, community announcements, and free registration windows.
+              </p>
+</div>
+<div class="lg:col-span-5 flex flex-col space-y-3">
+<form class="flex flex-col sm:flex-row gap-2" onsubmit="event.preventDefault(); document.getElementById('newsletter-msg').classList.remove('hidden');">
+<input class="flex-1 px-4 py-3.5 rounded-xl bg-white text-slate-900 text-xs placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#34A853]" placeholder="Enter your email address" required="" type="email"/>
+<button class="px-6 py-3.5 rounded-xl bg-[#F5A623] hover:bg-[#FBBF24] text-[#0A1626] font-extrabold text-xs tracking-wider uppercase transition-all shadow-md shrink-0 flex items-center justify-center gap-2" type="submit">
+<span>Subscribe</span>
+<span class="material-symbols-outlined text-base">send</span>
+</button>
+</form>
+<p class="hidden text-xs text-[#FEF08A] font-bold" id="newsletter-msg">
+                ✓ Thank you for connecting! Welcome to the Gordonridge community circle.
+              </p>
+<p class="text-[11px] text-slate-300">
+                Zero spam. Multilingual translations available upon request.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 13. COMMANDING DEEP NAVY FOOTER WITH BRAND GREEN & GOLD BORDERS -->
+<footer class="w-full bg-[#0A1626] text-slate-300 pt-16 pb-12 border-t-4 border-[#1B7A3E]" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+<!-- Column 1 & 2: Branding & Mission -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-white p-0.5 ring-2 ring-[#34A853] shrink-0">
+<img alt="Gordonridge CDI Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuNDFDcfwPszWv5B3IbCYxJ6MCx0YUxezoakcfr-j1KPJStORjTqP1O93em_JZNm0k1-tnP2KlV-0Sp8Xbn2-CiLCuryV8jzTFwSIaBXT4xynhOr39tVh_O8pl8nOqDE6dGzHX5KAeYu-92k2BrWWotb133CEmA_dEYpOdWDc-y04K2ppFPm6n8vrzYcxmIe__ca5Ow-jGdP8PTwQ5dm98OtYA8i9pp1Mn2COd8uX8Kdtrad1lqWJebxpD23-oiKbk-Q"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xl font-extrabold text-white tracking-tight">GORDONRIDGE</span>
+<span class="text-xs font-bold text-[#34A853] tracking-widest uppercase">Community Development Initiative</span>
+</div>
+</div>
+<p class="text-xs text-slate-300 max-w-md leading-relaxed">
+            Empowering Scarborough residents across all generations through grassroots youth mentorship, senior community spaces, health equity, food sovereignty, and civic collaboration.
+          </p>
+<div class="text-xs font-extrabold text-[#FEF08A] tracking-wider uppercase">
+            STRONG PEOPLE | STRONG FAMILIES | STRONGER COMMUNITY
+          </div>
+<div class="flex items-center gap-2 pt-2">
+<a aria-label="Community Hub" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#1B7A3E] text-white flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">groups</span>
+</a>
+<a aria-label="Announcements" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#1B7A3E] text-white flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">campaign</span>
+</a>
+<a aria-label="Photos" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#1B7A3E] text-white flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">photo_camera</span>
+</a>
+<a aria-label="Email" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#1B7A3E] text-white flex items-center justify-center transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+</a>
+</div>
+</div>
+<!-- Column 3: Programs -->
+<div class="space-y-3">
+<span class="text-xs font-extrabold text-white uppercase tracking-wider block border-b border-[#1B7A3E] pb-1">Programs</span>
+<ul class="space-y-2 text-xs">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#34A853]"></span><a class="hover:text-white transition-colors" href="#programs">Youth Tech &amp; Sports</a></li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#F5A623]"></span><a class="hover:text-white transition-colors" href="#programs">Food Share &amp; Kitchen</a></li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#34A853]"></span><a class="hover:text-white transition-colors" href="#programs">Golden Age Seniors Club</a></li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#F5A623]"></span><a class="hover:text-white transition-colors" href="#programs">Children's Tutoring &amp; Play</a></li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#34A853]"></span><a class="hover:text-white transition-colors" href="#programs">Community Wellness Clinics</a></li>
+</ul>
+</div>
+<!-- Column 4: Quick Links -->
+<div class="space-y-3">
+<span class="text-xs font-extrabold text-white uppercase tracking-wider block border-b border-[#F5A623] pb-1">Quick Links</span>
+<ul class="space-y-2 text-xs">
+<li><a class="hover:text-white transition-colors" href="#about">Our Mission &amp; Roots</a></li>
+<li><a class="hover:text-white transition-colors" href="#priorities">Resident Council Hub</a></li>
+<li><a class="hover:text-white transition-colors" href="#events">Upcoming Gatherings</a></li>
+<li><a class="hover:text-white transition-colors" href="#stories">Impact Reports &amp; Stories</a></li>
+<li><a class="hover:text-white transition-colors" href="#get-involved">Volunteer Opportunities</a></li>
+<li><a class="hover:text-white transition-colors" href="#contact">Contact Community Desk</a></li>
+</ul>
+</div>
+<!-- Column 5: Location & Contact -->
+<div class="space-y-3">
+<span class="text-xs font-extrabold text-white uppercase tracking-wider block border-b border-[#34A853] pb-1">Community Hub</span>
+<p class="text-xs text-slate-300 leading-relaxed">
+            Gordonridge Place Community Room &amp; Recreation Park<br/>
+            Scarborough, ON M1K 4H7<br/>
+            Toronto, Ontario, Canada
+          </p>
+<div class="pt-2 text-xs space-y-1">
+<div class="flex items-center gap-2 text-[#FEF08A]">
+<span class="material-symbols-outlined text-sm text-[#34A853]">call</span>
+<span>(416) 267-3777</span>
+</div>
+<div class="flex items-center gap-2 text-slate-300">
+<span class="material-symbols-outlined text-sm text-[#F5A623]">mail</span>
+<span>info@gordonridgecdi.ca</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+<div>
+          © 2025 Gordonridge Community Development Initiative. All rights reserved.
+        </div>
+<div class="flex items-center gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">AODA Accessibility Standards</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-navy: #0F243E;
+  --primary-dark: #0A1626;
+  --primary-container: #13335A;
+  --secondary-green: #1B7A3E;
+  --secondary-dark: #135C2E;
+  --leaf-green: #34A853;
+  --accent-gold: #F5A623;
+  --light-gold: #FEF08A;
+  --bg-cream: #FDFBF7;
+  --bg-mint: #F0F7F2;
+  --bg-warm-yellow: #FFFDF0;
+}
+
+/* Accessible focus visible */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #34A853;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A1626;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1B7A3E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #34A853;
+}
+
+/* Micro-animations */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+/* Glassmorphism helpers */
+.glass-dark {
+  background: rgba(15, 36, 62, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+
+/* Interactive / Clickable Cards Only (Restrained Lift: translateY -4px, scale ~1.008) */
+.card-interactive {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.22s ease;
+  cursor: pointer;
+  will-change: transform, box-shadow;
+}
+
+.card-interactive:hover {
+  transform: translateY(-4px) scale(1.008);
+  box-shadow: 0 16px 28px -6px rgba(15, 36, 62, 0.12), 0 6px 12px -3px rgba(15, 36, 62, 0.06);
+  border-color: rgba(27, 122, 62, 0.3);
+}
+
+.card-interactive:active {
+  transform: translateY(-1px) scale(1.002);
+  box-shadow: 0 8px 16px -4px rgba(15, 36, 62, 0.1);
+}
+
+.card-interactive img,
+.card-interactive-dark img {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-interactive:hover img,
+.card-interactive-dark:hover img {
+  transform: scale(1.025);
+}
+
+.card-interactive-dark {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.22s ease;
+  cursor: pointer;
+  will-change: transform, box-shadow;
+}
+
+.card-interactive-dark:hover {
+  transform: translateY(-4px) scale(1.008);
+  box-shadow: 0 18px 32px -6px rgba(0, 0, 0, 0.5), 0 0 18px rgba(52, 168, 83, 0.22);
+  border-color: rgba(52, 168, 83, 0.45);
+}
+
+.card-interactive-dark:active {
+  transform: translateY(-1px) scale(1.002);
+}
+
+/* Static Cards & Content Panels - Calm & Visually Stable (No Movement, No Scale) */
+.card-static {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-static:hover {
+  border-color: rgba(27, 122, 62, 0.25);
+  box-shadow: 0 10px 24px -6px rgba(15, 36, 62, 0.06);
+}
+
+/* Interactive Button Hover & Click Feedback */
+.btn-interactive {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.18s ease,
+              border-color 0.18s ease,
+              color 0.18s ease,
+              filter 0.18s ease;
+  cursor: pointer;
+  will-change: transform, box-shadow;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.btn-interactive:hover {
+  transform: translateY(-2px) scale(1.015);
+  box-shadow: 0 10px 20px -4px rgba(15, 36, 62, 0.22), 0 4px 8px -2px rgba(15, 36, 62, 0.1);
+  filter: brightness(1.03);
+}
+
+.btn-interactive:active {
+  transform: translateY(0px) scale(0.98);
+  box-shadow: 0 4px 8px -2px rgba(15, 36, 62, 0.18);
+  filter: brightness(0.97);
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Gordonridge Community Development Initiative</title>
+  <meta name="description" content="Contact the Gordonridge Community Development Initiative at 20 Gordonridge Place Community Centre in Scarborough, Ontario."/>
+  
+  <link rel="icon" type="image/png" href="gordonridge-logo.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0F243E",
+            "primary-dark": "#0A1626",
+            "primary-container": "#13335A",
+            "secondary": "#1B7A3E",
+            "secondary-dark": "#135c2e",
+            "secondary-container": "#D2F5D7",
+            "secondary-fixed": "#34A853",
+            "tertiary": "#F5A623",
+            "tertiary-fixed": "#FBBF24",
+            "tertiary-container": "#FEF08A",
+            "surface": "#FDFBF7",
+            "background": "#FDFBF7",
+            "surface-mint": "#F0F7F2",
+            "surface-warm-yellow": "#FFFDF0",
+            "on-surface": "#0F1E2E"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css"/>
+</head>
+<body class="bg-[#FDFBF7] font-sans text-[#0F1E2E] antialiased">
+
+  <!-- TOP BRAND BANNER & UTILITY BAR -->
+  <header class="fixed top-0 w-full z-50 shadow-md bg-white">
+    <div class="w-full bg-[#0A1626] text-white text-xs font-semibold border-b border-[#1B7A3E]/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-9 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="inline-block w-2 h-2 rounded-full bg-[#F5A623] animate-pulse"></span>
+          <span class="tracking-wider uppercase text-[#FEF08A] font-bold text-[11px] sm:text-xs">
+            Strong People · Strong Families · Stronger Community
+          </span>
+        </div>
+        <div class="hidden md:flex items-center gap-6 text-slate-300 text-xs">
+          <span class="flex items-center gap-1.5 text-slate-200">
+            <span class="material-symbols-outlined text-xs text-[#34A853]">location_on</span>
+            Community Centre, 20 Gordonridge Place, Scarborough ON
+          </span>
+          <a href="contact.html" class="hover:text-[#FEF08A] transition-colors flex items-center gap-1 text-[#D2F5D7]">
+            <span class="material-symbols-outlined text-xs">mail</span>Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="bg-white/95 backdrop-blur-md border-b-2 border-[#1B7A3E]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-4">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-[#1B7A3E] shadow-sm shrink-0 bg-white p-0.5 group-hover:scale-105 transition-transform">
+            <img src="gordonridge-logo.png" alt="Gordonridge CDI Logo" class="w-full h-full object-contain"/>
+          </div>
+          <div class="flex flex-col">
+            <div class="font-extrabold text-xl tracking-tight leading-none">
+              <span class="text-[#0F243E] group-hover:text-[#1B7A3E] transition-colors">GORDON</span><span class="text-[#1B7A3E]">RIDGE</span>
+            </div>
+            <span class="text-[10px] sm:text-[11px] font-bold text-[#1B7A3E] tracking-widest uppercase mt-0.5">
+              Community Development Initiative
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-1 font-semibold text-[13px]">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors">Home</a>
+          
+          <div class="relative nav-item">
+            <a href="about.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors inline-flex items-center gap-1">
+              <span>About</span>
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </a>
+            <div class="nav-dropdown absolute left-0 top-full pt-2 w-56 z-50">
+              <div class="bg-white rounded-2xl shadow-xl border border-[#1B7A3E]/15 p-2 space-y-1">
+                <a href="about.html#who-we-are" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Who We Are</a>
+                <a href="about.html#mission-vision" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Mission &amp; Vision</a>
+                <a href="about.html#leadership" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Resident Leadership</a>
+                <a href="partners.html" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Partners</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative nav-item">
+            <a href="programs.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors inline-flex items-center gap-1">
+              <span>Programs</span>
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </a>
+            <div class="nav-dropdown absolute left-0 top-full pt-2 w-64 z-50">
+              <div class="bg-white rounded-2xl shadow-xl border border-[#1B7A3E]/15 p-2 space-y-1">
+                <a href="programs.html#intergenerational" class="block px-3 py-2 rounded-xl text-xs font-bold text-[#1B7A3E] bg-[#F0F7F2]">★ Seniors &amp; Youth</a>
+                <a href="programs.html#seniors-wellness" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Seniors Engagement</a>
+                <a href="programs.html#youth-leadership" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Youth Leadership</a>
+                <a href="programs.html#community-safety" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Community Safety</a>
+                <a href="programs.html#family-support" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Family Support</a>
+                <a href="programs.html#resident-leadership" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Resident Leadership</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="impact.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors">Impact</a>
+          <a href="news-events.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors">News &amp; Events</a>
+          <a href="gallery.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors">Gallery</a>
+
+          <div class="relative nav-item">
+            <a href="get-involved.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors inline-flex items-center gap-1">
+              <span>Get Involved</span>
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </a>
+            <div class="nav-dropdown absolute left-0 top-full pt-2 w-56 z-50">
+              <div class="bg-white rounded-2xl shadow-xl border border-[#1B7A3E]/15 p-2 space-y-1">
+                <a href="get-involved.html#participate" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Join a Program</a>
+                <a href="get-involved.html#volunteer" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Become a Volunteer</a>
+                <a href="get-involved.html#resident-leader" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Resident Leadership</a>
+                <a href="partners.html" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Partner With Us</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="px-3.5 py-2 rounded-lg text-[#1B7A3E] bg-[#F0F7F2] font-bold" aria-current="page">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="get-involved.html" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-[#1B7A3E] hover:bg-[#135c2e] text-white font-bold text-xs tracking-wide shadow-md transition-all">
+            <span>Get Involved</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-[#0F243E] hover:bg-[#F0F7F2]" aria-label="Open mobile menu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-[#0A1626]/70 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 w-80 max-w-full h-full bg-white z-50 shadow-2xl p-6 overflow-y-auto translate-x-full transition-transform duration-300">
+    <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+      <div class="flex items-center gap-2">
+        <img src="gordonridge-logo.png" alt="Gordonridge Logo" class="w-10 h-10 object-contain"/>
+        <span class="font-extrabold text-sm text-[#0F243E]">GORDONRIDGE CDI</span>
+      </div>
+      <button id="mobile-menu-close" class="p-2 text-slate-500 hover:text-slate-900 rounded-lg" aria-label="Close menu">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+    </div>
+    <div class="py-6 space-y-2 text-sm font-semibold text-[#0F243E]">
+      <a href="index.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Home</a>
+      <a href="about.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">About Us</a>
+      <a href="programs.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Programs</a>
+      <a href="impact.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Impact</a>
+      <a href="news-events.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">News &amp; Events</a>
+      <a href="gallery.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Gallery</a>
+      <a href="partners.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Partners</a>
+      <a href="get-involved.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Get Involved</a>
+      <a href="contact.html" class="block px-4 py-2.5 rounded-xl bg-[#F0F7F2] text-[#1B7A3E] font-bold">Contact Us</a>
+    </div>
+  </div>
+
+  <main class="w-full pt-28">
+
+    <!-- PAGE HERO HEADER -->
+    <section class="relative w-full bg-[#0A1626] text-white py-16 sm:py-20 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="images/gordonridge-residential-buildings.jpeg" alt="Gordonridge towers backdrop" class="w-full h-full object-cover opacity-20 mix-blend-luminosity"/>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0A1626] via-[#0F243E]/90 to-[#0A1626]"></div>
+      </div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="max-w-3xl space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#FEF08A] text-xs font-extrabold uppercase tracking-widest border border-white/20">
+            <span>Community Desk</span>
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            Contact Us
+          </h1>
+          <p class="text-base sm:text-lg text-slate-200 leading-relaxed">
+            Reach out to Gordonridge Community Development Initiative. We welcome questions, registrations, volunteer inquiries, and partnership proposals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT DETAILS & INTERACTIVE MESSAGE FORM -->
+    <section class="w-full py-16 sm:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Column 1: Organization Coordinates -->
+          <div class="lg:col-span-5 space-y-8">
+            <div class="space-y-4">
+              <span class="px-3 py-1 rounded-full bg-[#D2F5D7] text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+                Location &amp; Office
+              </span>
+              <h2 class="text-2xl sm:text-3xl font-black text-[#0F243E]">Gordonridge CDI</h2>
+              <div class="space-y-3 text-slate-700 text-sm">
+                <div class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[#1B7A3E] text-xl shrink-0 mt-0.5">location_on</span>
+                  <div>
+                    <strong class="text-[#0F243E] block">Community Centre</strong>
+                    20 Gordonridge Place<br/>
+                    Scarborough, Ontario<br/>
+                    <span class="text-xs text-slate-500">Serving 10, 20, 30 &amp; 40 Gordonridge Place</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 pt-2">
+                  <span class="material-symbols-outlined text-[#F5A623] text-xl shrink-0 mt-0.5">mail</span>
+                  <div>
+                    <strong class="text-[#0F243E] block">Email</strong>
+                    <span class="text-slate-600">[Organization Email: <a href="mailto:info@gordonridgecdi.ca" class="text-[#1B7A3E] hover:underline font-semibold">info@gordonridgecdi.ca</a>]</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 pt-2">
+                  <span class="material-symbols-outlined text-[#0F243E] text-xl shrink-0 mt-0.5">call</span>
+                  <div>
+                    <strong class="text-[#0F243E] block">Phone</strong>
+                    <span class="text-slate-600">[Organization Phone: <span class="font-semibold text-slate-800">(416) 267-3777</span>]</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 pt-2">
+                  <span class="material-symbols-outlined text-[#1B7A3E] text-xl shrink-0 mt-0.5">language</span>
+                  <div>
+                    <strong class="text-[#0F243E] block">Website</strong>
+                    <span class="text-slate-600">[Website Address: <span class="font-semibold text-slate-800">gordonridgecdi.ca</span>]</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Connect With Us -->
+            <div class="p-6 rounded-3xl bg-[#FDFBF7] border border-[#1B7A3E]/20 space-y-3">
+              <h3 class="font-bold text-sm text-[#0F243E] uppercase tracking-wider">Connect With Us</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Stay updated through our social and community channels:
+              </p>
+              <div class="flex items-center gap-3 pt-2">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-xl bg-white border border-slate-300 text-xs font-bold text-[#0F243E] hover:border-[#1B7A3E] hover:text-[#1B7A3E] flex items-center gap-1.5 transition-colors">
+                  <span class="material-symbols-outlined text-sm">photo_camera</span>
+                  <span>Instagram</span>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-xl bg-white border border-slate-300 text-xs font-bold text-[#0F243E] hover:border-[#1B7A3E] hover:text-[#1B7A3E] flex items-center gap-1.5 transition-colors">
+                  <span class="material-symbols-outlined text-sm">thumb_up</span>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-xl bg-white border border-slate-300 text-xs font-bold text-[#0F243E] hover:border-[#1B7A3E] hover:text-[#1B7A3E] flex items-center gap-1.5 transition-colors">
+                  <span class="material-symbols-outlined text-sm">work</span>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Court Image Feature -->
+            <div class="rounded-3xl overflow-hidden shadow-lg border border-slate-200">
+              <img src="images/gordonridge-court-branding.jpeg" alt="G-Ridge court surface branding" class="w-full h-44 object-cover"/>
+            </div>
+
+          </div>
+
+          <!-- Column 2: Message Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-[#1B7A3E]/20 space-y-6">
+              <div>
+                <h3 class="text-2xl font-black text-[#0F243E]">Send a Message to the Community Desk</h3>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                  Have a question about program times, hall availability, or family resources? Write to us below.
+                </p>
+              </div>
+
+              <form onsubmit="event.preventDefault(); document.getElementById('contact-success').classList.remove('hidden'); this.reset();" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="space-y-1">
+                    <label for="name" class="block text-xs font-bold text-[#0F243E] uppercase tracking-wider">Your Name *</label>
+                    <input id="name" required type="text" placeholder="First and last name" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-[#34A853] focus:outline-none"/>
+                  </div>
+                  <div class="space-y-1">
+                    <label for="phone" class="block text-xs font-bold text-[#0F243E] uppercase tracking-wider">Phone Number *</label>
+                    <input id="phone" required type="tel" placeholder="(416) 000-0000" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-[#34A853] focus:outline-none"/>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="space-y-1">
+                    <label for="email" class="block text-xs font-bold text-[#0F243E] uppercase tracking-wider">Email Address</label>
+                    <input id="email" type="email" placeholder="your-email@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-[#34A853] focus:outline-none"/>
+                  </div>
+                  <div class="space-y-1">
+                    <label for="subject" class="block text-xs font-bold text-[#0F243E] uppercase tracking-wider">Inquiry Topic *</label>
+                    <select id="subject" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-[#34A853] focus:outline-none">
+                      <option value="general">General Inquiries</option>
+                      <option value="seniors">Seniors Programs &amp; Wellness</option>
+                      <option value="youth">Youth Leadership &amp; Recreation</option>
+                      <option value="family">Family &amp; Food Support</option>
+                      <option value="volunteer">Volunteer Opportunities</option>
+                      <option value="partner">Community Partnerships</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="space-y-1">
+                  <label for="message" class="block text-xs font-bold text-[#0F243E] uppercase tracking-wider">Your Message *</label>
+                  <textarea id="message" required rows="4" placeholder="How can our community team assist you?" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-[#34A853] focus:outline-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-xl bg-[#1B7A3E] hover:bg-[#135c2e] text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-md">
+                  Send Message
+                </button>
+              </form>
+
+              <div id="contact-success" class="hidden p-4 rounded-2xl bg-[#D2F5D7] border border-[#34A853] text-[#0A1626] text-xs font-bold text-center">
+                ✓ Thank you! Your message has been received. Our community coordinator will respond as soon as possible.
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-[#0A1626] text-slate-300 pt-16 pb-12 border-t-4 border-[#1B7A3E]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full overflow-hidden bg-white p-0.5 ring-2 ring-[#34A853] shrink-0">
+              <img src="gordonridge-logo.png" alt="Gordonridge CDI Logo" class="w-full h-full object-contain"/>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl font-extrabold text-white tracking-tight">GORDONRIDGE</span>
+              <span class="text-xs font-bold text-[#34A853] tracking-widest uppercase">Community Development Initiative</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 max-w-md leading-relaxed">
+            Gordonridge Community Development Initiative is a Black, resident-led organization working to strengthen families and improve the quality of life for residents in Scarborough.
+          </p>
+          <div class="text-xs font-extrabold text-[#FEF08A] tracking-wider uppercase">
+            Strong People · Strong Families · Stronger Community
+          </div>
+        </div>
+        <div class="space-y-3">
+          <span class="text-xs font-extrabold text-white uppercase tracking-wider block border-b border-[#1B7A3E] pb-1">Programs</span>
+          <ul class="space-y-2 text-xs">
+            <li><a href="programs.html#intergenerational" class="hover:text-white">Seniors &amp; Youth</a></li>
+            <li><a href="programs.html#seniors-wellness" class="hover:text-white">Seniors Wellness</a></li>
+            <li><a href="programs.html#youth-leadership" class="hover:text-white">Youth Leadership</a></li>
+            <li><a href="programs.html#community-safety" class="hover:text-white">Community Safety</a></li>
+            <li><a href="programs.html#family-support" class="hover:text-white">Family Support</a></li>
+            <li><a href="programs.html#resident-leadership" class="hover:text-white">Resident Leadership</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <span class="text-xs font-extrabold text-white uppercase tracking-wider block border-b border-[#F5A623] pb-1">Quick Links</span>
+          <ul class="space-y-2 text-xs">
+            <li><a href="about.html" class="hover:text-white">Who We Are</a></li>
+            <li><a href="impact.html" class="hover:text-white">Community Impact</a></li>
+            <li><a href="gallery.html" class="hover:text-white">Photo Gallery</a></li>
+            <li><a href="news-events.html" class="hover:text-white">News &amp; Events</a></li>
+            <li><a href="partners.html" class="hover:text-white">Partners</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <span class="text-xs font-extrabold text-white uppercase tracking-wider block border-b border-[#34A853] pb-1">Community Hub</span>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Community Centre<br/>
+            20 Gordonridge Place<br/>
+            Scarborough, Ontario
+          </p>
+          <div class="pt-2 text-xs space-y-1">
+            <div class="flex items-center gap-2 text-slate-300">
+              <span class="material-symbols-outlined text-sm text-[#34A853]">pin_drop</span>
+              <span>10, 20, 30 &amp; 40 Gordonridge Place</span>
+            </div>
+            <div class="flex items-center gap-2 text-[#FEF08A]">
+              <span class="material-symbols-outlined text-sm text-[#F5A623]">mail</span>
+              <a href="mailto:info@gordonridgecdi.ca" class="hover:underline">info@gordonridgecdi.ca</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div>&copy; Gordonridge Community Development Initiative. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="index.html" class="hover:text-white">Home</a>
+          <a href="about.html" class="hover:text-white">About</a>
+          <a href="contact.html" class="hover:text-white">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

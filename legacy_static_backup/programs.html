@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programs | Gordonridge Community Development Initiative</title>
+  <meta name="description" content="Explore our six core community programs in Gordonridge: Intergenerational Seniors & Youth, Seniors Engagement, Youth Leadership, Community Safety, Family Support, and Resident Leadership."/>
+  
+  <link rel="icon" type="image/png" href="gordonridge-logo.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0F243E",
+            "primary-dark": "#0A1626",
+            "primary-container": "#13335A",
+            "secondary": "#1B7A3E",
+            "secondary-dark": "#135c2e",
+            "secondary-container": "#D2F5D7",
+            "secondary-fixed": "#34A853",
+            "tertiary": "#F5A623",
+            "tertiary-fixed": "#FBBF24",
+            "tertiary-container": "#FEF08A",
+            "surface": "#FDFBF7",
+            "background": "#FDFBF7",
+            "surface-mint": "#F0F7F2",
+            "surface-warm-yellow": "#FFFDF0",
+            "on-surface": "#0F1E2E"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css"/>
+</head>
+<body class="bg-[#FDFBF7] font-sans text-[#0F1E2E] antialiased">
+
+  <!-- TOP BRAND BANNER & UTILITY BAR -->
+  <header class="fixed top-0 w-full z-50 shadow-md bg-white">
+    <div class="w-full bg-[#0A1626] text-white text-xs font-semibold border-b border-[#1B7A3E]/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-9 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="inline-block w-2 h-2 rounded-full bg-[#F5A623] animate-pulse"></span>
+          <span class="tracking-wider uppercase text-[#FEF08A] font-bold text-[11px] sm:text-xs">
+            Strong People · Strong Families · Stronger Community
+          </span>
+        </div>
+        <div class="hidden md:flex items-center gap-6 text-slate-300 text-xs">
+          <span class="flex items-center gap-1.5 text-slate-200">
+            <span class="material-symbols-outlined text-xs text-[#34A853]">location_on</span>
+            Community Centre, 20 Gordonridge Place, Scarborough ON
+          </span>
+          <a href="contact.html" class="hover:text-[#FEF08A] transition-colors flex items-center gap-1 text-[#D2F5D7]">
+            <span class="material-symbols-outlined text-xs">mail</span>Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="bg-white/95 backdrop-blur-md border-b-2 border-[#1B7A3E]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-20 flex items-center justify-between gap-4">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="relative w-12 h-12 rounded-full overflow-hidden ring-2 ring-[#1B7A3E] shadow-sm shrink-0 bg-white p-0.5 group-hover:scale-105 transition-transform">
+            <img src="gordonridge-logo.png" alt="Gordonridge CDI Logo" class="w-full h-full object-contain"/>
+          </div>
+          <div class="flex flex-col">
+            <div class="font-extrabold text-xl tracking-tight leading-none">
+              <span class="text-[#0F243E] group-hover:text-[#1B7A3E] transition-colors">GORDON</span><span class="text-[#1B7A3E]">RIDGE</span>
+            </div>
+            <span class="text-[10px] sm:text-[11px] font-bold text-[#1B7A3E] tracking-widest uppercase mt-0.5">
+              Community Development Initiative
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-1 font-semibold text-[13px]">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors">Home</a>
+          
+          <div class="relative nav-item">
+            <a href="about.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors inline-flex items-center gap-1">
+              <span>About</span>
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </a>
+            <div class="nav-dropdown absolute left-0 top-full pt-2 w-56 z-50">
+              <div class="bg-white rounded-2xl shadow-xl border border-[#1B7A3E]/15 p-2 space-y-1">
+                <a href="about.html#who-we-are" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Who We Are</a>
+                <a href="about.html#mission-vision" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Mission &amp; Vision</a>
+                <a href="about.html#leadership" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Resident Leadership</a>
+                <a href="partners.html" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Partners</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative nav-item">
+            <a href="programs.html" class="px-3.5 py-2 rounded-lg text-[#1B7A3E] bg-[#F0F7F2] font-bold inline-flex items-center gap-1" aria-current="page">
+              <span>Programs</span>
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </a>
+            <div class="nav-dropdown absolute left-0 top-full pt-2 w-64 z-50">
+              <div class="bg-white rounded-2xl shadow-xl border border-[#1B7A3E]/15 p-2 space-y-1">
+                <a href="#intergenerational" class="block px-3 py-2 rounded-xl text-xs font-bold text-[#1B7A3E] bg-[#F0F7F2]">★ Seniors &amp; Youth</a>
+                <a href="#seniors-wellness" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Seniors Engagement</a>
+                <a href="#youth-leadership" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Youth Leadership</a>
+                <a href="#community-safety" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Community Safety</a>
+                <a href="#family-support" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Family Support</a>
+                <a href="#resident-leadership" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Resident Leadership</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="impact.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors">Impact</a>
+          <a href="news-events.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors">News &amp; Events</a>
+          <a href="gallery.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors">Gallery</a>
+
+          <div class="relative nav-item">
+            <a href="get-involved.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors inline-flex items-center gap-1">
+              <span>Get Involved</span>
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </a>
+            <div class="nav-dropdown absolute left-0 top-full pt-2 w-56 z-50">
+              <div class="bg-white rounded-2xl shadow-xl border border-[#1B7A3E]/15 p-2 space-y-1">
+                <a href="get-involved.html#participate" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Join a Program</a>
+                <a href="get-involved.html#volunteer" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Become a Volunteer</a>
+                <a href="get-involved.html#resident-leader" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Resident Leadership</a>
+                <a href="partners.html" class="block px-3 py-2 rounded-xl text-xs font-semibold text-[#0F243E] hover:bg-[#F0F7F2] hover:text-[#1B7A3E]">Partner With Us</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="px-3 py-2 rounded-lg text-[#0F243E] hover:text-[#1B7A3E] hover:bg-[#F0F7F2] transition-colors">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="get-involved.html" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-[#1B7A3E] hover:bg-[#135c2e] text-white font-bold text-xs tracking-wide shadow-md transition-all">
+            <span>Register Now</span>
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-[#0F243E] hover:bg-[#F0F7F2]" aria-label="Open mobile menu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-[#0A1626]/70 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 w-80 max-w-full h-full bg-white z-50 shadow-2xl p-6 overflow-y-auto translate-x-full transition-transform duration-300">
+    <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+      <div class="flex items-center gap-2">
+        <img src="gordonridge-logo.png" alt="Gordonridge Logo" class="w-10 h-10 object-contain"/>
+        <span class="font-extrabold text-sm text-[#0F243E]">GORDONRIDGE CDI</span>
+      </div>
+      <button id="mobile-menu-close" class="p-2 text-slate-500 hover:text-slate-900 rounded-lg" aria-label="Close menu">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+    </div>
+    <div class="py-6 space-y-2 text-sm font-semibold text-[#0F243E]">
+      <a href="index.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Home</a>
+      <a href="about.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">About Us</a>
+      <a href="programs.html" class="block px-4 py-2.5 rounded-xl bg-[#F0F7F2] text-[#1B7A3E] font-bold">Programs</a>
+      <a href="impact.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Impact</a>
+      <a href="news-events.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">News &amp; Events</a>
+      <a href="gallery.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Gallery</a>
+      <a href="partners.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Partners</a>
+      <a href="get-involved.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Get Involved</a>
+      <a href="contact.html" class="block px-4 py-2.5 rounded-xl hover:bg-slate-50">Contact Us</a>
+    </div>
+  </div>
+
+  <main class="w-full pt-28">
+
+    <!-- PAGE HERO HEADER -->
+    <section class="relative w-full bg-[#0A1626] text-white py-16 sm:py-20 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="images/gordonridge-court-branding.jpeg" alt="G-Ridge court markings" class="w-full h-full object-cover opacity-25 mix-blend-luminosity"/>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0A1626] via-[#0F243E]/90 to-[#0A1626]"></div>
+      </div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="max-w-3xl space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#FEF08A] text-xs font-extrabold uppercase tracking-widest border border-white/20">
+            <span>Verified Program Framework</span>
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            Our Community Programs
+          </h1>
+          <p class="text-base sm:text-lg text-slate-200 leading-relaxed">
+            Connecting generations, strengthening families, and developing resident leadership through six core community program areas in Scarborough.
+          </p>
+          <div class="text-xs font-extrabold text-[#34A853] uppercase tracking-wider pt-2">
+            Connecting Generations · Strengthening Gordonridge
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM 1 (PRIMARY FEATURED): INTERGENERATIONAL SENIORS & YOUTH -->
+    <section class="w-full py-16 sm:py-20 bg-white" id="intergenerational">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="rounded-3xl bg-gradient-to-r from-[#0F243E] to-[#13335A] text-white overflow-hidden shadow-2xl border border-white/10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+            
+            <div class="lg:col-span-6 relative h-80 sm:h-96 lg:h-full min-h-[400px]">
+              <img src="images/gordonridge-community-court-aerial.jpeg" alt="Gordonridge court and towers" class="w-full h-full object-cover"/>
+              <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#0F243E] via-transparent to-transparent"></div>
+              <div class="absolute top-6 left-6 px-4 py-2 rounded-full bg-[#F5A623] text-[#0A1626] font-extrabold text-xs uppercase tracking-wide shadow-md">
+                ★ Primary Featured Program
+              </div>
+            </div>
+
+            <div class="lg:col-span-6 p-8 sm:p-12 space-y-5">
+              <span class="px-3.5 py-1.5 rounded-full bg-[#1B7A3E] text-white font-bold text-xs uppercase tracking-wider">
+                Signature Program Area
+              </span>
+              <h2 class="text-2xl sm:text-4xl font-black tracking-tight text-white">
+                Intergenerational Seniors &amp; Youth Programs
+              </h2>
+              <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
+                Our seniors and youth programs bring different generations together to learn from one another, build relationships and reduce isolation.
+              </p>
+              <div class="space-y-2 text-xs sm:text-sm text-slate-200 pt-1">
+                <div class="font-bold text-[#FEF08A] uppercase tracking-wider text-xs">Activities Include:</div>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
+                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#34A853]">check_circle</span>Mentoring &amp; storytelling</li>
+                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#34A853]">check_circle</span>Technology support</li>
+                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#34A853]">check_circle</span>Community meals</li>
+                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#34A853]">check_circle</span>Cultural activities</li>
+                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#34A853]">check_circle</span>Workshops &amp; projects</li>
+                  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#34A853]">check_circle</span>Leadership opportunities</li>
+                </ul>
+              </div>
+              <p class="text-xs text-slate-300 italic pt-2">
+                "Young people gain knowledge, guidance and positive relationships with older residents, while seniors remain active, connected and involved in the community."
+              </p>
+              <div class="pt-4 border-t border-white/15">
+                <a href="get-involved.html#join-program" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#34A853] hover:bg-[#1B7A3E] text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-lg">
+                  <span>Register for Intergenerational Programs</span>
+                  <span class="material-symbols-outlined text-base">how_to_reg</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE 5 OTHER VERIFIED PROGRAMS -->
+    <section class="w-full py-16 sm:py-20 bg-[#FDFBF7]" id="all-programs">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 space-y-14">
+        
+        <!-- PROGRAM 2: SENIORS ENGAGEMENT & WELLNESS -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center p-8 sm:p-12 rounded-3xl bg-white border border-[#1B7A3E]/20 shadow-md" id="seniors-wellness">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D2F5D7] text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+              <span>Program Area 02</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#0F243E]">Seniors Engagement &amp; Wellness</h3>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              We create opportunities for seniors to remain active and connected through social gatherings, wellness activities, workshops, community meals, digital literacy, outings and peer support.
+            </p>
+            <div class="p-4 rounded-2xl bg-[#F0F7F2] border border-[#1B7A3E]/20 text-xs text-[#0F243E] font-medium">
+              <strong>Core Focus:</strong> A major focus is reaching seniors who may be isolated or have difficulty accessing services and community activities.
+            </div>
+          </div>
+          <div class="lg:col-span-4 flex flex-col justify-center space-y-3">
+            <a href="get-involved.html#seniors-reg" class="w-full py-3.5 rounded-xl bg-[#1B7A3E] hover:bg-[#135c2e] text-white font-bold text-xs text-center uppercase tracking-wider transition-colors shadow-md">
+              Seniors Registration
+            </a>
+            <div class="text-[11px] text-center text-slate-500">Free participation for all local seniors 55+</div>
+          </div>
+        </div>
+
+        <!-- PROGRAM 3: YOUTH LEADERSHIP & DEVELOPMENT -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center p-8 sm:p-12 rounded-3xl bg-white border border-[#F5A623]/30 shadow-md" id="youth-leadership">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FEF08A] text-[#B45309] text-xs font-bold uppercase tracking-wider">
+              <span>Program Area 03</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#0F243E]">Youth Leadership &amp; Development</h3>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              We help young people build confidence, leadership skills and stronger connections to their community.
+            </p>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Youth can participate in mentoring, leadership development, volunteering, employment readiness, life-skills activities and community projects.
+            </p>
+          </div>
+          <div class="lg:col-span-4 flex flex-col justify-center space-y-3">
+            <a href="get-involved.html#youth-reg" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#F5A623] to-[#FBBF24] hover:from-[#d97706] hover:to-[#F5A623] text-[#0A1626] font-extrabold text-xs text-center uppercase tracking-wider transition-all shadow-md">
+              Youth Registration
+            </a>
+            <div class="text-[11px] text-center text-slate-500">Mentorship, leadership &amp; athletic access</div>
+          </div>
+        </div>
+
+        <!-- PROGRAM 4: COMMUNITY SAFETY & VIOLENCE PREVENTION -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center p-8 sm:p-12 rounded-3xl bg-white border border-[#0F243E]/20 shadow-md" id="community-safety">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#DCE8F7] text-[#0F243E] text-xs font-bold uppercase tracking-wider">
+              <span>Program Area 04</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#0F243E]">Community Safety &amp; Violence Prevention</h3>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              We work with residents, youth, families and community partners to promote safer neighbourhoods across Gordonridge.
+            </p>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Our approach focuses on prevention, positive relationships, resident involvement, conflict prevention and connecting young people and families with appropriate supports.
+            </p>
+          </div>
+          <div class="lg:col-span-4 flex flex-col justify-center space-y-3">
+            <a href="get-involved.html#volunteer" class="w-full py-3.5 rounded-xl bg-[#0F243E] hover:bg-[#13335A] text-white font-bold text-xs text-center uppercase tracking-wider transition-colors shadow-md">
+              Participate In Safety Circles
+            </a>
+            <div class="text-[11px] text-center text-slate-500">Resident-led care and restorative solutions</div>
+          </div>
+        </div>
+
+        <!-- PROGRAM 5: FAMILY & COMMUNITY SUPPORT (WITH REAL FOOD SUPPORT IMAGES) -->
+        <div class="p-8 sm:p-12 rounded-3xl bg-white border border-[#1B7A3E]/20 shadow-md space-y-8" id="family-support">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-4">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D2F5D7] text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+                <span>Program Area 05</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-[#0F243E]">Family &amp; Community Support</h3>
+              <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                We help residents connect with food support, employment opportunities, housing and community resources, workshops, referrals and other services.
+              </p>
+              <div class="p-4 rounded-2xl bg-[#FFFDF0] border border-[#F5A623]/30 font-bold text-xs sm:text-sm text-[#0F243E]">
+                Our goal is to make it easier for families to find help when they need it.
+              </div>
+            </div>
+            <div class="lg:col-span-5 grid grid-cols-2 gap-3">
+              <img src="images/food-support-02.jpeg" alt="Food provisions and beverage supplies" class="w-full h-36 object-cover rounded-2xl shadow-sm"/>
+              <img src="images/food-support-03.jpeg" alt="Food packages prepared for residents" class="w-full h-36 object-cover rounded-2xl shadow-sm"/>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4">
+            <span class="text-xs text-slate-600">Connect with food provisions, emergency assistance, and local referrals.</span>
+            <a href="contact.html" class="px-6 py-3 rounded-xl bg-[#1B7A3E] text-white font-bold text-xs uppercase tracking-wider hover:bg-[#135c2e] transition-colors">
+              Request Family Support
+            </a>
+          </div>
+        </div>
+
+        <!-- PROGRAM 6: RESIDENT LEADERSHIP & VOLUNTEERISM -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center p-8 sm:p-12 rounded-3xl bg-white border border-[#F5A623]/30 shadow-md" id="resident-leadership">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FEF08A] text-[#B45309] text-xs font-bold uppercase tracking-wider">
+              <span>Program Area 06</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#0F243E]">Resident Leadership &amp; Volunteerism</h3>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              Residents are not only participants in our programs; they are part of leading the work.
+            </p>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              We create opportunities for seniors, youth, parents and other residents to volunteer, develop leadership skills, participate in community decision-making and help shape Gordonridge initiatives.
+            </p>
+          </div>
+          <div class="lg:col-span-4 flex flex-col justify-center space-y-3">
+            <a href="get-involved.html#resident-leader" class="w-full py-3.5 rounded-xl bg-[#0F243E] hover:bg-[#1B7A3E] text-white font-bold text-xs text-center uppercase tracking-wider transition-colors shadow-md">
+              Become A Resident Leader
+            </a>
+            <div class="text-[11px] text-center text-slate-500">Shape the future of our neighborhood</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="w-full py-16 bg-[#0A1626] text-white">
+      <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
+        <h2 class="text-3xl sm:text-4xl font-black">Ready to Take Part in Gordonridge Programs?</h2>
+        <p class="text-slate-300 text-sm sm:text-base">
+          All programs are free and open to residents and families in Gordonridge and surrounding Scarborough communities.
+        </p>
+        <div class="pt-2">
+          <a href="get-involved.html" class="inline-block px-8 py-4 rounded-xl bg-[#1B7A3E] hover:bg-[#228838] text-white font-bold text-xs uppercase tracking-wider shadow-lg transition-colors">
+            Get Involved &amp; Register Free
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-[#0A1626] text-slate-300 pt-16 pb-12 border-t-4 border-[#1B7A3E]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full overflow-hidden bg-white p-0.5 ring-2 ring-[#34A853] shrink-0">
+              <img src="gordonridge-logo.png" alt="Gordonridge CDI Logo" class="w-full h-full object-contain"/>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xl font-extrabold text-white tracking-tight">GORDONRIDGE</span>
+              <span class="text-xs font-bold text-[#34A853] tracking-widest uppercase">Community Development Initiative</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-300 max-w-md leading-relaxed">
+            Gordonridge Community Development Initiative is a Black, resident-led organization working to strengthen families and improve the quality of life for residents in Scarborough.
+          </p>
+          <div class="text-xs font-extrabold text-[#FEF08A] tracking-wider uppercase">
+            Strong People · Strong Families · Stronger Community
+          </div>
+        </div>
+        <div class="space-y-3">
+          <span class="text-xs font-extrabold text-white uppercase tracking-wider block border-b border-[#1B7A3E] pb-1">Programs</span>
+          <ul class="space-y-2 text-xs">
+            <li><a href="programs.html#intergenerational" class="hover:text-white">Seniors &amp; Youth</a></li>
+            <li><a href="programs.html#seniors-wellness" class="hover:text-white">Seniors Wellness</a></li>
+            <li><a href="programs.html#youth-leadership" class="hover:text-white">Youth Leadership</a></li>
+            <li><a href="programs.html#community-safety" class="hover:text-white">Community Safety</a></li>
+            <li><a href="programs.html#family-support" class="hover:text-white">Family Support</a></li>
+            <li><a href="programs.html#resident-leadership" class="hover:text-white">Resident Leadership</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <span class="text-xs font-extrabold text-white uppercase tracking-wider block border-b border-[#F5A623] pb-1">Quick Links</span>
+          <ul class="space-y-2 text-xs">
+            <li><a href="about.html" class="hover:text-white">Who We Are</a></li>
+            <li><a href="impact.html" class="hover:text-white">Community Impact</a></li>
+            <li><a href="gallery.html" class="hover:text-white">Photo Gallery</a></li>
+            <li><a href="news-events.html" class="hover:text-white">News &amp; Events</a></li>
+            <li><a href="partners.html" class="hover:text-white">Partners</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <span class="text-xs font-extrabold text-white uppercase tracking-wider block border-b border-[#34A853] pb-1">Community Hub</span>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Community Centre<br/>
+            20 Gordonridge Place<br/>
+            Scarborough, Ontario
+          </p>
+          <div class="pt-2 text-xs space-y-1">
+            <div class="flex items-center gap-2 text-slate-300">
+              <span class="material-symbols-outlined text-sm text-[#34A853]">pin_drop</span>
+              <span>10, 20, 30 &amp; 40 Gordonridge Place</span>
+            </div>
+            <div class="flex items-center gap-2 text-[#FEF08A]">
+              <span class="material-symbols-outlined text-sm text-[#F5A623]">mail</span>
+              <a href="contact.html" class="hover:underline">Contact Community Desk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div>&copy; Gordonridge Community Development Initiative. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="index.html" class="hover:text-white">Home</a>
+          <a href="about.html" class="hover:text-white">About</a>
+          <a href="contact.html" class="hover:text-white">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
