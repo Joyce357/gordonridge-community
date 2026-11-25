@@ -5,7 +5,7 @@ import { impactPillars } from "@/data/impact";
 export const metadata: Metadata = {
   title: "Community Impact | Generations Working Together",
   description:
-    "Explore how Gordonridge Community Development Initiative builds stronger families, reduces senior isolation, and develops youth leaders.",
+    "Explore how Gordonridge Community Development Initiative strengthens food security, builds stronger families, reduces senior isolation, and develops youth leaders.",
 };
 
 export default function ImpactPage() {

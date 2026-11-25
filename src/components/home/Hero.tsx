@@ -47,9 +47,9 @@ export default function Hero() {
             </p>
             <p className="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed">
               Our work brings generations together, with a strong focus on seniors and youth. Through
-              intergenerational programs, community safety initiatives, family support, leadership
-              development and connections to resources, we help residents build a stronger and more
-              connected community.
+              intergenerational programs, community safety initiatives, food security and family
+              support, leadership development and connections to essential resources, we help
+              residents build a stronger and more connected community.
             </p>
 
             {/* Dual Primary/Secondary CTAs */}

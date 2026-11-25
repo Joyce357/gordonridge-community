@@ -23,8 +23,8 @@ export default function GalleryPreview() {
               Moments from Gordonridge
             </h2>
             <p className="text-slate-600 text-sm sm:text-base">
-              A look at our community court, residential towers, volunteer food hamper sorting, and
-              intergenerational care in Scarborough.
+              A look at our community court, residential towers, food security and community supply
+              efforts, and intergenerational care in Scarborough.
             </p>
           </div>
           <Link

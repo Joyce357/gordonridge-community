@@ -143,8 +143,13 @@ export default function ProgramsPage() {
                   <span id="family-support" className="absolute -top-28 block pointer-events-none" />
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                     <div className="lg:col-span-7 space-y-4">
-                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D2F5D7] text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
-                        <span>{badge.label}</span>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D2F5D7] text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+                          <span>{badge.label}</span>
+                        </div>
+                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EDF7F0] border border-[#1B7A3E]/30 text-[#1B7A3E] text-xs font-bold uppercase tracking-wider">
+                          <span>Food Security &amp; Essential Supplies</span>
+                        </div>
                       </div>
                       <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0F243E]">
                         {prog.title}
@@ -153,7 +158,8 @@ export default function ProgramsPage() {
                         {prog.fullDescription}
                       </p>
                       <div className="p-4 rounded-2xl bg-[#FFFDF0] border border-[#F5A623]/30 font-bold text-xs sm:text-sm text-[#0F243E]">
-                        Our goal is to make it easier for families to find help when they need it.
+                        Supporting food security, community supplies, and essential resources so
+                        families in need can find practical help close to home.
                       </div>
                       <div className="space-y-1.5 pt-2">
                         <span className="text-xs font-bold text-[#0F243E] uppercase tracking-wider block">
@@ -173,20 +179,30 @@ export default function ProgramsPage() {
                     </div>
                     <div className="lg:col-span-5 grid grid-cols-2 gap-3">
                       <img
-                        src="/images/gordonridge/food-support/food-support-02.jpeg"
-                        alt="Food provisions and beverage supplies"
-                        className="w-full h-40 object-cover rounded-2xl shadow-sm"
+                        src="/images/gordonridge/food-support/food-support-03.jpeg"
+                        alt="Prepared food support boxes and pantry supply packages for Gordonridge households"
+                        className="w-full h-36 sm:h-40 object-cover rounded-2xl shadow-sm"
                       />
                       <img
-                        src="/images/gordonridge/food-support/food-support-03.jpeg"
-                        alt="Food packages prepared for residents"
-                        className="w-full h-40 object-cover rounded-2xl shadow-sm"
+                        src="/images/gordonridge/food-support/food-support-02.jpeg"
+                        alt="Organized food supplies, fruit cups, snack bars, and beverages for resident support"
+                        className="w-full h-36 sm:h-40 object-cover rounded-2xl shadow-sm"
+                      />
+                      <img
+                        src="/images/gordonridge/food-support/food-support-01.jpeg"
+                        alt="Community food support table and organized supply packages for Gordonridge residents"
+                        className="w-full h-36 sm:h-40 object-cover rounded-2xl shadow-sm"
+                      />
+                      <img
+                        src="/images/gordonridge/food-support/food-support-04.jpeg"
+                        alt="Fruit cups, snack bars, beverages, and food support provisions arranged for community care"
+                        className="w-full h-36 sm:h-40 object-cover rounded-2xl shadow-sm"
                       />
                     </div>
                   </div>
                   <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4">
                     <span className="text-xs text-slate-600">
-                      Connect with food provisions, emergency assistance, and local referrals.
+                      Connect with food support, community supplies, essential resources, and local referrals.
                     </span>
                     <Link
                       href={prog.ctaHref}

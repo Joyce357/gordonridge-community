@@ -86,9 +86,9 @@ export default function OurCommunity() {
             </div>
 
             <p className="text-sm text-slate-600 leading-relaxed">
-              All community gatherings, workshops, senior circles, youth sessions, and food
-              distributions are anchored right here. Residents know exactly where to walk to find
-              familiar faces, practical support, and welcoming neighbors.
+              All community gatherings, workshops, senior circles, youth sessions, and food support
+              and community supply efforts are anchored right here. Residents know exactly where to
+              walk to find familiar faces, practical support, and welcoming neighbors.
             </p>
 
             <div className="space-y-3 pt-2 text-xs text-slate-700">

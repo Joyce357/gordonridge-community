@@ -61,46 +61,46 @@ export const galleryItems: GalleryItem[] = [
   {
     id: "food-support-01",
     src: "/images/gordonridge/food-support/food-support-01.jpeg",
-    alt: "Essential food support hampers and fresh groceries for Gordonridge families",
+    alt: "Community food support table and organized supply packages for Gordonridge residents",
     caption:
-      "Food support hampers and fresh grocery provisions organized for community distribution to Gordonridge families and seniors.",
+      "Food support items, refreshments, and boxed community supplies prepared for Gordonridge residents and families.",
     category: "Family & Community Support",
     featured: true,
   },
   {
     id: "food-support-02",
     src: "/images/gordonridge/food-support/food-support-02.jpeg",
-    alt: "Fresh produce and grocery provisions organized for community delivery",
+    alt: "Organized food supplies, fruit cups, snack bars, and beverages for resident support",
     caption:
-      "Nutritious groceries and food security provisions prepared for distribution across 10, 20, 30, and 40 Gordonridge Place.",
+      "Community supplies, pantry items, and nutritious snacks organized to support food security and family wellbeing across Gordonridge.",
     category: "Family & Community Support",
-    featured: false,
+    featured: true,
   },
   {
     id: "food-support-03",
     src: "/images/gordonridge/food-support/food-support-03.jpeg",
-    alt: "Community food hampers prepared by resident volunteers",
+    alt: "Prepared food support boxes and pantry supply packages for Gordonridge households",
     caption:
-      "Resident volunteers organizing and assembling vital food packages to assist neighbours and eliminate barriers to essential nutrition.",
-    category: "Resident Leaders & Volunteers",
-    featured: false,
+      "Carefully assembled food support packages and essential pantry supplies prepared for Gordonridge families and seniors.",
+    category: "Family & Community Support",
+    featured: true,
   },
   {
     id: "food-support-04",
     src: "/images/gordonridge/food-support/food-support-04.jpeg",
-    alt: "Gordonridge community food distribution initiative supporting local households",
+    alt: "Fruit cups, snack bars, beverages, and food support provisions arranged for community care",
     caption:
-      "Family & community food relief initiative providing direct household assistance and connecting residents with community resources.",
+      "Food access and community care supplies prepared to support resident wellbeing and welcoming neighbourhood gatherings.",
     category: "Families & Community Events",
     featured: true,
   },
   {
     id: "food-support-05",
     src: "/images/gordonridge/food-support/food-support-05.jpeg",
-    alt: "Resident volunteer packaging and sorting food hampers for seniors and families",
+    alt: "Assorted baked goods and refreshments arranged for Gordonridge community support gatherings",
     caption:
-      "Dedicated resident volunteer packaging and sorting food hampers to ensure seniors and families receive essential nourishment.",
-    category: "Resident Leaders & Volunteers",
+      "Community hospitality and shared refreshments supporting resident connection, care, and neighbourhood wellbeing.",
+    category: "Families & Community Events",
     featured: true,
   },
 ];

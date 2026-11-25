@@ -83,8 +83,8 @@ export const impactPillars: ImpactPillar[] = [
         description: "across 10, 20, 30, and 40 Gordonridge Place residential towers.",
       },
       {
-        highlight: "Connect families with food support, housing, and social services",
-        description: "to reduce daily household pressures and food insecurity.",
+        highlight: "Strengthening food security and access to essential supplies",
+        description: "for residents and families, while connecting households with housing and community resources.",
       },
       {
         highlight: "Improve community safety and belonging",
