@@ -20,8 +20,8 @@ export default function ProgramsPage() {
       <section className="relative w-full bg-[#0A1626] text-white py-16 sm:py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/gordonridge/community/gordonridge-court-branding.jpeg"
-            alt="G-Ridge court markings"
+            src="/images/gordonridge/seniors/seniors-community-meal-02.jpeg"
+            alt="Gordonridge community gathering and shared meal at the community centre"
             className="w-full h-full object-cover opacity-25 mix-blend-luminosity"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1626] via-[#0F243E]/90 to-[#0A1626]"></div>
@@ -184,18 +184,18 @@ export default function ProgramsPage() {
                         className="w-full h-36 sm:h-40 object-cover rounded-2xl shadow-sm"
                       />
                       <img
+                        src="/images/gordonridge/nutrition/seniors-meal-service-01.jpeg"
+                        alt="Resident volunteers serving warm meals and refreshments to seniors and neighbours"
+                        className="w-full h-36 sm:h-40 object-cover rounded-2xl shadow-sm"
+                      />
+                      <img
                         src="/images/gordonridge/food-support/food-support-02.jpeg"
                         alt="Organized food supplies, fruit cups, snack bars, and beverages for resident support"
                         className="w-full h-36 sm:h-40 object-cover rounded-2xl shadow-sm"
                       />
                       <img
-                        src="/images/gordonridge/food-support/food-support-01.jpeg"
-                        alt="Community food support table and organized supply packages for Gordonridge residents"
-                        className="w-full h-36 sm:h-40 object-cover rounded-2xl shadow-sm"
-                      />
-                      <img
-                        src="/images/gordonridge/food-support/food-support-04.jpeg"
-                        alt="Fruit cups, snack bars, beverages, and food support provisions arranged for community care"
+                        src="/images/gordonridge/seniors/seniors-community-gathering-01.jpeg"
+                        alt="Seniors and resident volunteers sharing food during a community gathering"
                         className="w-full h-36 sm:h-40 object-cover rounded-2xl shadow-sm"
                       />
                     </div>
@@ -250,7 +250,14 @@ export default function ProgramsPage() {
                     </ul>
                   </div>
                 </div>
-                <div className="lg:col-span-4 flex flex-col justify-center space-y-3">
+                <div className="lg:col-span-4 flex flex-col justify-center space-y-4">
+                  <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-200 aspect-[4/3] bg-slate-100">
+                    <img
+                      src={prog.image}
+                      alt={prog.title}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
                   <Link
                     href={prog.ctaHref}
                     className="btn-interactive w-full py-3.5 rounded-xl bg-[#1B7A3E] hover:bg-[#135c2e] text-white font-bold text-xs text-center uppercase tracking-wider shadow-md"

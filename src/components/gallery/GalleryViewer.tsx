@@ -58,8 +58,16 @@ export default function GalleryViewer() {
         {filteredItems.map((item) => (
           <div
             key={item.id}
-            className="group card-interactive-dark cursor-pointer rounded-3xl overflow-hidden bg-[#0A1626] border border-[#1B7A3E]/20 shadow-md"
+            role="button"
+            tabIndex={0}
+            className="group card-interactive-dark cursor-pointer rounded-3xl overflow-hidden bg-[#0A1626] border border-[#1B7A3E]/20 shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1B7A3E] focus-visible:ring-offset-2"
             onClick={() => setActiveItem(item)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                setActiveItem(item);
+              }
+            }}
           >
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
@@ -86,8 +94,13 @@ export default function GalleryViewer() {
         ))}
       </div>
 
-      {/* Lightbox Modal */}
-      <LightboxModal item={activeItem} onClose={() => setActiveItem(null)} />
+      {/* Lightbox Modal (Filter-Aware Navigation) */}
+      <LightboxModal
+        item={activeItem}
+        items={filteredItems}
+        onNavigate={setActiveItem}
+        onClose={() => setActiveItem(null)}
+      />
     </div>
   );
 }

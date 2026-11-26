@@ -27,60 +27,53 @@ export default function ImpactSection() {
           </p>
         </div>
 
-        {/* 3 Visual Clusters for Verified Client Outcomes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {impactPillars.map((pillar) => (
-            <div
-              key={pillar.id}
-              className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md space-y-6"
-            >
+        {/* 3 Clean Editorial Columns (Borderless Dark Typography, No Heavy Card Boxes) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
+          {impactPillars.map((pillar) => {
+            const topRule =
+              pillar.id === "connected-generations"
+                ? "border-[#34A853]"
+                : pillar.id === "opportunity-leadership"
+                ? "border-[#F5A623]"
+                : "border-[#D2F5D7]";
+            const labelColor =
+              pillar.id === "connected-generations"
+                ? "text-[#34A853]"
+                : pillar.id === "opportunity-leadership"
+                ? "text-[#FBBF24]"
+                : "text-[#D2F5D7]";
+
+            return (
               <div
-                className={`w-12 h-12 rounded-2xl flex items-center justify-center ${
-                  pillar.id === "connected-generations"
-                    ? "bg-[#1B7A3E]/30 text-[#34A853]"
-                    : pillar.id === "opportunity-leadership"
-                    ? "bg-[#F5A623]/30 text-[#FBBF24]"
-                    : "bg-[#34A853]/30 text-[#D2F5D7]"
-                }`}
+                key={pillar.id}
+                className={`pt-6 border-t-2 ${topRule} space-y-5`}
               >
-                <span className="material-symbols-outlined text-2xl">{pillar.icon}</span>
+                <div className="flex items-center justify-between">
+                  <span className={`text-xs font-extrabold uppercase tracking-wider ${labelColor}`}>
+                    {pillar.number} &middot; {pillar.title}
+                  </span>
+                  <span className={`material-symbols-outlined text-xl ${labelColor}`}>
+                    {pillar.icon}
+                  </span>
+                </div>
+                <ul className="space-y-3.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  {pillar.outcomes.map((outcome, idx) => (
+                    <li key={idx} className="flex items-start gap-2.5">
+                      <span
+                        className={`material-symbols-outlined text-sm shrink-0 mt-1 ${labelColor}`}
+                      >
+                        check_circle
+                      </span>
+                      <span>
+                        <strong className="text-white">{outcome.highlight}</strong>{" "}
+                        {outcome.description}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div>
-                <span
-                  className={`text-[11px] font-extrabold uppercase tracking-wider ${
-                    pillar.id === "connected-generations"
-                      ? "text-[#34A853]"
-                      : pillar.id === "opportunity-leadership"
-                      ? "text-[#FBBF24]"
-                      : "text-[#D2F5D7]"
-                  }`}
-                >
-                  Theme {pillar.number}
-                </span>
-                <h3 className="text-xl font-bold text-white mt-1">{pillar.title}</h3>
-              </div>
-              <ul className="space-y-3 text-xs text-slate-300">
-                {pillar.outcomes.map((outcome, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5">
-                    <span
-                      className={`material-symbols-outlined text-sm shrink-0 mt-0.5 ${
-                        pillar.id === "connected-generations"
-                          ? "text-[#34A853]"
-                          : pillar.id === "opportunity-leadership"
-                          ? "text-[#FBBF24]"
-                          : "text-[#34A853]"
-                      }`}
-                    >
-                      check_circle
-                    </span>
-                    <span>
-                      <strong>{outcome.highlight}</strong> {outcome.description}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="text-center pt-4">

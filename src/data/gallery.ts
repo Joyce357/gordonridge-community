@@ -32,6 +32,60 @@ export const galleryCategories: GalleryCategory[] = [
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "seniors-community-meal-01",
+    src: "/images/gordonridge/seniors/seniors-community-meal-01.jpeg",
+    alt: "Seniors and residents seated together enjoying a shared community meal at the Gordonridge Community Centre",
+    caption:
+      "Seniors and neighbours sharing a warm community meal and conversation inside the Gordonridge Community Centre.",
+    category: "Seniors in the Community",
+    featured: true,
+  },
+  {
+    id: "resident-volunteers-community-01",
+    src: "/images/gordonridge/community/resident-volunteers-community-01.jpeg",
+    alt: "Smiling Gordonridge resident volunteers and youth gathered together in the community centre",
+    caption:
+      "Resident volunteers and young community members coming together to support neighbourhood initiatives at 20 Gordonridge Place.",
+    category: "Resident Leaders & Volunteers",
+    featured: true,
+  },
+  {
+    id: "seniors-meal-service-01",
+    src: "/images/gordonridge/nutrition/seniors-meal-service-01.jpeg",
+    alt: "Resident volunteers serving warm meals and refreshments to seniors and neighbours at the community centre",
+    caption:
+      "Resident volunteers serving warm meals and organizing community supplies to support food security and neighbourly care.",
+    category: "Family & Community Support",
+    featured: true,
+  },
+  {
+    id: "seniors-community-connection-01",
+    src: "/images/gordonridge/seniors/seniors-community-connection-01.jpeg",
+    alt: "Gordonridge seniors and residents talking together inside the sunlit community centre",
+    caption:
+      "Neighbours connecting in conversation and building welcoming relationships at the Gordonridge Community Centre.",
+    category: "Seniors in the Community",
+    featured: true,
+  },
+  {
+    id: "seniors-community-gathering-01",
+    src: "/images/gordonridge/seniors/seniors-community-gathering-01.jpeg",
+    alt: "Seniors and resident volunteers sharing food and hospitality during a Gordonridge community gathering",
+    caption:
+      "Seniors, residents, and volunteers gathering over a shared meal in a welcoming community space.",
+    category: "Families & Community Events",
+    featured: true,
+  },
+  {
+    id: "seniors-community-meal-02",
+    src: "/images/gordonridge/seniors/seniors-community-meal-02.jpeg",
+    alt: "Wide view of an inclusive community meal and gathering in the Gordonridge Community Centre gymnasium",
+    caption:
+      "An inclusive, accessible community gathering bringing seniors, residents, and volunteers together at 20 Gordonridge Place.",
+    category: "Seniors in the Community",
+    featured: true,
+  },
+  {
     id: "court-aerial",
     src: "/images/gordonridge/community/gordonridge-community-court-aerial.jpeg",
     alt: "Aerial view of the revitalized Gordonridge community sports court and recreation space",

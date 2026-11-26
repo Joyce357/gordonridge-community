@@ -22,7 +22,7 @@ export const programs: Program[] = [
       "Our seniors and youth programs bring different generations together to learn from one another, build relationships and reduce isolation. Young people gain knowledge, guidance and positive relationships with older residents, while seniors remain active, connected and involved in the community.",
     category: "Intergenerational",
     featured: true,
-    image: "/images/gordonridge/community/gordonridge-community-court-aerial.jpeg",
+    image: "/images/gordonridge/seniors/seniors-community-meal-01.jpeg",
     audience: "Seniors & Youth in Gordonridge",
     activities: [
       "Mentoring & positive relationship building",
@@ -45,7 +45,7 @@ export const programs: Program[] = [
       "We create opportunities for seniors to remain active and connected through social gatherings, wellness activities, workshops, community meals, digital literacy, outings and peer support. A major focus is reaching seniors who may be isolated or have difficulty accessing services and community activities.",
     category: "Seniors",
     featured: true,
-    image: "/images/gordonridge/food-support/food-support-01.jpeg",
+    image: "/images/gordonridge/seniors/seniors-community-connection-01.jpeg",
     audience: "Seniors & Elders in Gordonridge",
     activities: [
       "Social gatherings & peer connection circles",
@@ -107,19 +107,19 @@ export const programs: Program[] = [
     slug: "family-community-support",
     title: "Family & Community Support",
     shortDescription:
-      "Supporting food security and helping families in need access food support, essential supplies, employment opportunities, housing assistance, and community resources.",
+      "Addressing food insecurity with nutritious meals and snacks, food support, essential supplies, and connections to housing, employment, and community resources.",
     fullDescription:
-      "Food security is an important part of community wellbeing. We help residents and families in need access food support, community supplies, and essential resources alongside employment opportunities, housing resources, workshops, and community referrals. Our goal is to make it easier for families to find practical support when they need it.",
+      "Access to nutritious food is an important part of healthy children, strong families and community wellbeing. We work to address food insecurity by improving access to nutritious meals and snacks, food support, essential supplies, and community resources alongside employment opportunities, housing resources, workshops, and referrals in a welcoming and dignified environment.",
     category: "Family & Food Support",
     featured: true,
     image: "/images/gordonridge/food-support/food-support-03.jpeg",
     audience: "Black Families & Gordonridge Households",
     activities: [
+      "Nutritious meals and snacks for children and families",
       "Food security initiatives & resident food support",
-      "Essential supplies & community supply efforts",
-      "Support for families and seniors in need",
+      "Essential supplies & community resource access",
       "Employment opportunities & career referrals",
-      "Housing support navigation & community resources",
+      "Housing support navigation & resources",
       "Informational workshops & direct social service referrals",
     ],
     ctaLabel: "Access Family Support",
@@ -134,7 +134,7 @@ export const programs: Program[] = [
       "Residents are not only participants in our programs; they are part of leading the work. We create opportunities for seniors, youth, parents and other residents to volunteer, develop leadership skills, participate in community decision-making and help shape Gordonridge initiatives.",
     category: "Leadership",
     featured: false,
-    image: "/images/gordonridge/food-support/food-support-05.jpeg",
+    image: "/images/gordonridge/community/resident-volunteers-community-01.jpeg",
     audience: "All Gordonridge Residents (Seniors, Youth, Parents)",
     activities: [
       "Community volunteer opportunities across all programs",

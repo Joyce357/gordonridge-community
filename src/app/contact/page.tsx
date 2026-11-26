@@ -119,12 +119,12 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Court Image Feature */}
+              {/* Community Connection Feature */}
               <div className="rounded-3xl overflow-hidden shadow-lg border border-slate-200">
                 <img
-                  src="/images/gordonridge/community/gordonridge-court-branding.jpeg"
-                  alt="G-Ridge court surface branding"
-                  className="w-full h-44 object-cover"
+                  src="/images/gordonridge/seniors/seniors-community-connection-01.jpeg"
+                  alt="Gordonridge seniors and residents connecting inside the community centre"
+                  className="w-full h-48 object-cover object-top"
                 />
               </div>
             </div>

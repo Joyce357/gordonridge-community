@@ -6,7 +6,7 @@ export default function WhoWeAre() {
       <span id="who-we-are" className="absolute -top-28 block pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* Left Image Column with Real Gordonridge Towers */}
           <div className="lg:col-span-5 relative">
             <div className="relative w-full h-[460px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-[#0F243E]">
@@ -43,56 +43,49 @@ export default function WhoWeAre() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F243E] tracking-tight leading-tight">
-              Created by Residents. Dedicated to Our Families.
+              Created by Residents. Rooted in Gordonridge.
             </h2>
 
             <div className="space-y-4 text-slate-700 text-base leading-relaxed">
-              <p className="font-medium text-[#0F243E]">
-                Gordonridge Community Development Initiative was created by residents who understand
-                the strengths, challenges and everyday realities of the Gordonridge community.
+              <p>
+                Gordonridge Community Development Initiative was created by residents who know the
+                strengths, challenges, and everyday realities of this Toronto Community Housing
+                neighbourhood in Scarborough &mdash; home to many first- and second-generation Black
+                immigrant families.
               </p>
               <p>
-                Gordonridge is a Toronto Community Housing community in Scarborough and is home to
-                many Black families, including first- and second-generation Black immigrant
-                families.
-              </p>
-              <p>
-                We believe residents should have a strong voice in shaping their own community. Our
-                organization brings seniors, youth, families, volunteers and community partners
-                together to address local needs, develop resident leadership and create opportunities
-                for people to support one another.
+                We bring seniors, youth, families, volunteers, and partners together so residents
+                lead the solutions that strengthen our community from within.
               </p>
             </div>
 
-            {/* 3 Editorial Pillars */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-              <div className="card-static p-5 rounded-2xl bg-white border border-[#1B7A3E]/20 shadow-sm">
-                <div className="w-10 h-10 rounded-xl bg-[#D2F5D7] text-[#1B7A3E] flex items-center justify-center mb-3">
-                  <span className="material-symbols-outlined text-2xl">campaign</span>
-                </div>
-                <h3 className="font-bold text-sm text-[#0F243E] mb-1">Resident Voice</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Local priorities steered directly by lived community experience and resident decision-making.
+            {/* 3 Concise Typographic Supporting Points (No Card Row) */}
+            <div className="space-y-3 pt-2 border-t border-slate-200/80">
+              <div className="flex items-start gap-3">
+                <span className="material-symbols-outlined text-[#1B7A3E] text-lg shrink-0 mt-0.5">
+                  check_circle
+                </span>
+                <p className="text-sm text-slate-700">
+                  <strong className="text-[#0F243E]">Resident Voice:</strong> Local priorities shaped
+                  by lived experience and community decision-making.
                 </p>
               </div>
-
-              <div className="card-static p-5 rounded-2xl bg-white border border-[#F5A623]/30 shadow-sm">
-                <div className="w-10 h-10 rounded-xl bg-[#FEF08A] text-[#B45309] flex items-center justify-center mb-3">
-                  <span className="material-symbols-outlined text-2xl">diversity_2</span>
-                </div>
-                <h3 className="font-bold text-sm text-[#0F243E] mb-1">Cultural Roots</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Centering the dignity, aspirations, and intergenerational wellness of Black families.
+              <div className="flex items-start gap-3">
+                <span className="material-symbols-outlined text-[#F5A623] text-lg shrink-0 mt-0.5">
+                  check_circle
+                </span>
+                <p className="text-sm text-slate-700">
+                  <strong className="text-[#0F243E]">Local Leadership:</strong> Developing resident
+                  leaders across generations to guide neighbourhood work.
                 </p>
               </div>
-
-              <div className="card-static p-5 rounded-2xl bg-white border border-[#0F243E]/20 shadow-sm">
-                <div className="w-10 h-10 rounded-xl bg-[#DCE8F7] text-[#0F243E] flex items-center justify-center mb-3">
-                  <span className="material-symbols-outlined text-2xl">handshake</span>
-                </div>
-                <h3 className="font-bold text-sm text-[#0F243E] mb-1">Mutual Care</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Developing local leadership so neighbors can lift, mentor, and support one another.
+              <div className="flex items-start gap-3">
+                <span className="material-symbols-outlined text-[#1B7A3E] text-lg shrink-0 mt-0.5">
+                  check_circle
+                </span>
+                <p className="text-sm text-slate-700">
+                  <strong className="text-[#0F243E]">Strengthening From Within:</strong> Centering
+                  the dignity, wellbeing, and aspirations of Black families in Gordonridge.
                 </p>
               </div>
             </div>
@@ -102,7 +95,7 @@ export default function WhoWeAre() {
                 href="/about"
                 className="btn-interactive inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#F0F7F2] hover:bg-[#1B7A3E] text-[#1B7A3E] hover:text-white font-bold text-xs uppercase tracking-wider shadow-sm"
               >
-                <span>Learn more about our mission &amp; leadership</span>
+                <span>Our Mission, Vision &amp; Leadership</span>
                 <span className="material-symbols-outlined text-base">arrow_forward</span>
               </Link>
             </div>

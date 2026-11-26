@@ -1,21 +1,20 @@
 import Hero from "@/components/home/Hero";
 import WhoWeAre from "@/components/home/WhoWeAre";
 import IntergenerationalFeature from "@/components/home/IntergenerationalFeature";
+import SeniorsSection from "@/components/home/SeniorsSection";
 import ProgramsSection from "@/components/home/ProgramsSection";
 import OurCommunity from "@/components/home/OurCommunity";
 import FamilySupport from "@/components/home/FamilySupport";
 import ImpactSection from "@/components/home/ImpactSection";
 import GalleryPreview from "@/components/home/GalleryPreview";
-import NewsEventsPreview from "@/components/home/NewsEventsPreview";
 import GetInvolvedSection from "@/components/home/GetInvolvedSection";
 import PartnersPreview from "@/components/home/PartnersPreview";
-import ContactSection from "@/components/home/ContactSection";
 import FinalCTA from "@/components/home/FinalCTA";
 
 export default function HomePage() {
   return (
     <>
-      {/* 1. Hero */}
+      {/* 1. Building a Stronger Gordonridge */}
       <Hero />
 
       {/* 2. Who We Are (#about) */}
@@ -24,23 +23,23 @@ export default function HomePage() {
       {/* 3. Connecting Generations */}
       <IntergenerationalFeature />
 
-      {/* 4. Programs (#programs) */}
+      {/* 4. Seniors Engagement & Wellness (#seniors) */}
+      <SeniorsSection />
+
+      {/* 5. Programs Preview (#programs) */}
       <ProgramsSection />
 
-      {/* 5. Our Gordonridge Community */}
+      {/* 6. Our Gordonridge Community */}
       <OurCommunity />
 
-      {/* 6. Family & Community Support */}
+      {/* 7. Food Security & Nutrition (#food-security / #family-support) */}
       <FamilySupport />
 
-      {/* 7. Community Impact (#impact) */}
+      {/* 8. Community Impact (#impact) */}
       <ImpactSection />
 
-      {/* 8. Gallery (#gallery) */}
+      {/* 9. Moments from Gordonridge (#gallery) */}
       <GalleryPreview />
-
-      {/* 9. News & Events (#news-events) */}
-      <NewsEventsPreview />
 
       {/* 10. Get Involved (#get-involved) */}
       <GetInvolvedSection />
@@ -48,10 +47,7 @@ export default function HomePage() {
       {/* 11. Partners (#partners) */}
       <PartnersPreview />
 
-      {/* 12. Contact (#contact) */}
-      <ContactSection />
-
-      {/* 13. Final Call to Action */}
+      {/* 12. Final Call to Action */}
       <FinalCTA />
     </>
   );

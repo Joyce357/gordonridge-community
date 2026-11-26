@@ -39,17 +39,11 @@ export default function Hero() {
               TOGETHER
             </h1>
 
-            {/* Supporting Verified Copy */}
-            <p className="text-base sm:text-lg text-slate-200 max-w-2xl leading-relaxed">
-              Gordonridge Community Development Initiative is a Black, resident-led organization
-              working to strengthen families and improve the quality of life for residents in the
-              Gordonridge community in Scarborough.
-            </p>
-            <p className="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed">
-              Our work brings generations together, with a strong focus on seniors and youth. Through
-              intergenerational programs, community safety initiatives, food security and family
-              support, leadership development and connections to essential resources, we help
-              residents build a stronger and more connected community.
+            {/* Supporting Verified Copy (Concise) */}
+            <p className="text-base sm:text-lg text-slate-200 max-w-xl leading-relaxed">
+              Gordonridge Community Development Initiative is a Black, resident-led organization in
+              Scarborough working with seniors, youth, and families to strengthen our neighbourhood
+              and improve community wellbeing.
             </p>
 
             {/* Dual Primary/Secondary CTAs */}
@@ -70,35 +64,20 @@ export default function Hero() {
               </Link>
             </div>
 
-            {/* Identity Badges */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-6 border-t border-white/15">
-              <div className="flex items-center gap-3 p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                <div className="w-10 h-10 rounded-lg bg-[#1B7A3E]/40 flex items-center justify-center text-[#34A853]">
-                  <span className="material-symbols-outlined text-xl">groups</span>
-                </div>
-                <div>
-                  <div className="font-bold text-xs text-white">Black, Resident-Led</div>
-                  <div className="text-[11px] text-slate-300">Rooted in Scarborough</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                <div className="w-10 h-10 rounded-lg bg-[#F5A623]/30 flex items-center justify-center text-[#FBBF24]">
-                  <span className="material-symbols-outlined text-xl">diversity_1</span>
-                </div>
-                <div>
-                  <div className="font-bold text-xs text-white">Connecting Generations</div>
-                  <div className="text-[11px] text-slate-300">Seniors, youth &amp; families</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 p-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                <div className="w-10 h-10 rounded-lg bg-[#34A853]/30 flex items-center justify-center text-[#D2F5D7]">
-                  <span className="material-symbols-outlined text-xl">location_city</span>
-                </div>
-                <div>
-                  <div className="font-bold text-xs text-white">Gordonridge Community</div>
-                  <div className="text-[11px] text-slate-300">10, 20, 30 &amp; 40 G-Place</div>
-                </div>
-              </div>
+            {/* Clean Typographic Identity Strip (No Card Row) */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-5 border-t border-white/15 text-xs text-slate-300 font-medium">
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#34A853]"></span>
+                Black, Resident-Led
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#FBBF24]"></span>
+                Seniors, Youth &amp; Families
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#34A853]"></span>
+                10, 20, 30 &amp; 40 Gordonridge Place
+              </span>
             </div>
 
           </div>

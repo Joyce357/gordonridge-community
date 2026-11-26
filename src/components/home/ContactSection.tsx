@@ -77,12 +77,12 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* Authentic Court Surface Image */}
+            {/* Authentic Community Connection Image */}
             <div className="rounded-3xl overflow-hidden shadow-md border border-slate-200">
               <img
-                src="/images/gordonridge/community/gordonridge-court-branding.jpeg"
-                alt="Gordonridge court branding"
-                className="w-full h-44 object-cover"
+                src="/images/gordonridge/seniors/seniors-community-connection-01.jpeg"
+                alt="Gordonridge seniors and residents talking together inside the community centre"
+                className="w-full h-48 object-cover object-top"
               />
             </div>
           </div>

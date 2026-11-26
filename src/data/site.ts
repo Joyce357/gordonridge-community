@@ -92,7 +92,7 @@ export const siteConfig: SiteConfig = {
     { label: "Impact", href: "/#impact" },
     { label: "Gallery", href: "/#gallery" },
     { label: "Get Involved", href: "/#get-involved" },
-    { label: "Contact", href: "/#contact" },
+    { label: "Contact", href: "/contact" },
   ],
   footer: {
     description:

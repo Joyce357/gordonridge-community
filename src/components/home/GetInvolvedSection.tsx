@@ -1,125 +1,105 @@
 import Link from "next/link";
-import { involvementPathways } from "@/data/get-involved";
+
+const pathways = [
+  {
+    number: "01",
+    title: "Participate in a Program",
+    description:
+      "Join seniors gatherings, youth leadership, intergenerational activities, or family support.",
+    href: "/get-involved#participate",
+    cta: "Join a Program",
+    accent: "text-[#1B7A3E]",
+  },
+  {
+    number: "02",
+    title: "Volunteer & Lead",
+    description:
+      "Share your time, help with community meals and workshops, or become a resident leader.",
+    href: "/get-involved#volunteer",
+    cta: "Become a Volunteer",
+    accent: "text-[#B45309]",
+  },
+  {
+    number: "03",
+    title: "Partner With Us",
+    description:
+      "Collaborate with Gordonridge CDI through funding, expertise, workshops, or community resources.",
+    href: "/partners",
+    cta: "Partner With Us",
+    accent: "text-[#0F243E]",
+  },
+];
 
 export default function GetInvolvedSection() {
   return (
-    <section className="w-full py-20 bg-[#FFFDF0] border-y border-[#F5A623]/25" id="get-involved">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 space-y-12">
-        <div className="max-w-3xl mx-auto text-center space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FEF08A] border border-[#F5A623]/40 text-[#0F243E] text-xs font-extrabold uppercase tracking-wider">
-            <span>Take Action</span>
-          </div>
-          <h2 className="text-3xl sm:text-5xl font-black text-[#0F243E] tracking-tight">
-            GORDONRIDGE NEEDS YOU
-          </h2>
-          <p className="text-slate-700 text-base leading-relaxed">
-            There is a place for everyone in building a stronger Gordonridge. Whether you are a
-            senior looking to connect, a young person interested in leadership, a parent looking
-            for community support or a resident wanting to volunteer, we encourage you to get
-            involved.
-          </p>
-        </div>
-
-        {/* 3 Distinct Pathways */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Pathway 1: PARTICIPATE */}
-          <div className="card-interactive p-8 rounded-3xl bg-white border border-[#1B7A3E]/20 shadow-md flex flex-col justify-between space-y-6">
-            <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#D2F5D7] text-[#1B7A3E] flex items-center justify-center">
-                <span className="material-symbols-outlined text-2xl">how_to_reg</span>
+    <section
+      className="w-full py-20 lg:py-24 bg-[#FFFDF0] border-y border-[#F5A623]/25 scroll-mt-20"
+      id="get-involved"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          {/* Left Column: Authentic Resident Volunteer & Community Photograph */}
+          <div className="lg:col-span-6 space-y-4">
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-[#0A1626] relative">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src="/images/gordonridge/community/resident-volunteers-community-01.jpeg"
+                  alt="Smiling Gordonridge resident volunteers and youth gathered together in the community centre"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
-              <span className="text-xs font-extrabold text-[#1B7A3E] uppercase tracking-wider block">
-                Pathway 01
-              </span>
-              <h3 className="text-2xl font-black text-[#0F243E]">PARTICIPATE</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Enroll in free weekly programs, intergenerational workshops, senior wellness circles,
-                or youth development activities.
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1626]/75 via-transparent to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5 text-white">
+                <span className="text-[11px] font-extrabold text-[#FEF08A] uppercase tracking-wider block">
+                  Resident Leaders &amp; Volunteers
+                </span>
+                <p className="text-xs sm:text-sm text-slate-100 mt-0.5">
+                  Residents are not only participants &mdash; they help lead the work in Gordonridge.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Editorial Heading + 3 Stacked Interactive Pathway Rows (No Card Grid) */}
+          <div className="lg:col-span-6 space-y-8">
+            <div className="space-y-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FEF08A] border border-[#F5A623]/40 text-[#0F243E] text-xs font-extrabold uppercase tracking-wider">
+                <span>Get Involved</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-black text-[#0F243E] tracking-tight">
+                GORDONRIDGE NEEDS YOU
+              </h2>
+              <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
+                Whether you are a senior looking to connect, a young person interested in
+                leadership, a parent seeking support, or a resident ready to volunteer, there is a
+                place for you here.
               </p>
             </div>
-            <div className="space-y-2 pt-4 border-t border-slate-100">
-              <Link
-                href="/get-involved#participate"
-                className="btn-interactive w-full py-3 rounded-xl bg-[#1B7A3E] hover:bg-[#135c2e] text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md"
-              >
-                <span>Join a Program</span>
-                <span className="material-symbols-outlined text-sm">arrow_forward</span>
-              </Link>
-              <div className="grid grid-cols-2 gap-2 pt-1">
+
+            <div className="divide-y divide-[#F5A623]/30 border-y border-[#F5A623]/30">
+              {pathways.map((item) => (
                 <Link
-                  href="/get-involved#seniors-registration"
-                  className="btn-interactive py-2.5 px-3 rounded-xl bg-[#F0F7F2] hover:bg-[#D2F5D7] text-[#1B7A3E] font-bold text-[11px] text-center"
+                  key={item.number}
+                  href={item.href}
+                  className="py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 group"
                 >
-                  Seniors Reg
+                  <div className="space-y-1 max-w-md">
+                    <div className="flex items-center gap-2.5">
+                      <span className={`text-xs font-black ${item.accent}`}>{item.number}</span>
+                      <h3 className="text-base font-extrabold text-[#0F243E] group-hover:text-[#1B7A3E] transition-colors">
+                        {item.title}
+                      </h3>
+                    </div>
+                    <p className="text-xs text-slate-600 leading-relaxed">{item.description}</p>
+                  </div>
+                  <span className="inline-flex items-center gap-1 text-xs font-bold text-[#1B7A3E] uppercase tracking-wider shrink-0">
+                    <span>{item.cta}</span>
+                    <span className="material-symbols-outlined text-sm group-hover:translate-x-0.5 transition-transform">
+                      arrow_forward
+                    </span>
+                  </span>
                 </Link>
-                <Link
-                  href="/get-involved#youth-registration"
-                  className="btn-interactive py-2.5 px-3 rounded-xl bg-[#F0F7F2] hover:bg-[#D2F5D7] text-[#1B7A3E] font-bold text-[11px] text-center"
-                >
-                  Youth Reg
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Pathway 2: LEAD */}
-          <div className="card-interactive p-8 rounded-3xl bg-white border border-[#F5A623]/30 shadow-md flex flex-col justify-between space-y-6">
-            <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#FEF08A] text-[#B45309] flex items-center justify-center">
-                <span className="material-symbols-outlined text-2xl">volunteer_activism</span>
-              </div>
-              <span className="text-xs font-extrabold text-[#D97706] uppercase tracking-wider block">
-                Pathway 02
-              </span>
-              <h3 className="text-2xl font-black text-[#0F243E]">LEAD</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Share your skills, organize community projects, mentor younger residents, or take an
-                active role in local decision-making.
-              </p>
-            </div>
-            <div className="space-y-2 pt-4 border-t border-slate-100">
-              <Link
-                href="/get-involved#volunteer"
-                className="btn-interactive w-full py-3 rounded-xl bg-gradient-to-r from-[#F5A623] to-[#FBBF24] hover:from-[#d97706] hover:to-[#F5A623] text-[#0A1626] font-extrabold text-xs flex items-center justify-center gap-2 shadow-md"
-              >
-                <span>Become a Volunteer</span>
-                <span className="material-symbols-outlined text-sm">handshake</span>
-              </Link>
-              <Link
-                href="/get-involved#resident-leader"
-                className="btn-interactive w-full py-2.5 rounded-xl border border-[#F5A623] text-[#0F243E] hover:bg-[#FEF08A]/30 font-bold text-[11px] flex items-center justify-center"
-              >
-                Become a Resident Leader
-              </Link>
-            </div>
-          </div>
-
-          {/* Pathway 3: PARTNER */}
-          <div className="card-interactive p-8 rounded-3xl bg-white border border-[#0F243E]/20 shadow-md flex flex-col justify-between space-y-6">
-            <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#DCE8F7] text-[#0F243E] flex items-center justify-center">
-                <span className="material-symbols-outlined text-2xl">corporate_fare</span>
-              </div>
-              <span className="text-xs font-extrabold text-[#0F243E] uppercase tracking-wider block">
-                Pathway 03
-              </span>
-              <h3 className="text-2xl font-black text-[#0F243E]">PARTNER</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Collaborate with Gordonridge CDI through funding, workshops, employment opportunities,
-                technology, or community services.
-              </p>
-            </div>
-            <div className="space-y-2 pt-4 border-t border-slate-100">
-              <Link
-                href="/partners"
-                className="btn-interactive w-full py-3 rounded-xl bg-[#0F243E] hover:bg-[#13335A] text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md"
-              >
-                <span>Become a Community Partner</span>
-                <span className="material-symbols-outlined text-sm">arrow_forward</span>
-              </Link>
-              <div className="text-[11px] text-center text-slate-500 pt-1">
-                Supporting Gordonridge &amp; Scarborough families
-              </div>
+              ))}
             </div>
           </div>
         </div>

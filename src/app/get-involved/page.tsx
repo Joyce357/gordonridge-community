@@ -20,9 +20,9 @@ export default function GetInvolvedPage() {
       <section className="relative w-full bg-[#0A1626] text-white py-16 sm:py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/gordonridge/community/gordonridge-community-court-aerial.jpeg"
-            alt="Gordonridge court backdrop"
-            className="w-full h-full object-cover opacity-25 mix-blend-luminosity"
+            src="/images/gordonridge/community/resident-volunteers-community-01.jpeg"
+            alt="Gordonridge resident volunteers and community members together"
+            className="w-full h-full object-cover object-top opacity-25 mix-blend-luminosity"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1626] via-[#0F243E]/90 to-[#0A1626]"></div>
         </div>
